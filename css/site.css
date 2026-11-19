@@ -38,7 +38,7 @@ a:hover, a:focus { color: var(--texte); text-decoration: underline; }
 .page__content a:hover, .archive a:hover { color: var(--texte); text-decoration: underline !important; }
 
 /* ---------- Barre de navigation ---------- */
-.masthead { border-top: 5px solid #424242; border-bottom: 1px solid var(--bordure); background: #fdfdfd; }
+.masthead { border-bottom: 1px solid var(--bordure); background: #fdfdfd; }
 .greedy-nav, .greedy-nav .visible-links { background: #fdfdfd; }
 .greedy-nav a, .greedy-nav a:visited { color: var(--texte); font-weight: 400; }
 .greedy-nav a:hover { color: var(--texte); text-decoration: none; }
