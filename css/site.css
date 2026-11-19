@@ -46,7 +46,6 @@ a:hover, a:focus { color: var(--texte); text-decoration: underline; }
 .greedy-nav .visible-links a::before { background: #424242; height: 2px; }
 
 /* ---------- Barre latérale ---------- */
-.author__avatar img { border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 3px solid #fff; box-shadow: 0 1px 6px rgba(0,0,0,.15); }
 .author__name { font-size: 1.15rem; font-weight: 400 !important; color: var(--texte); line-height: 1.3; }
 .author__bio { color: var(--texte-doux); font-size: .9rem; }
 .author__urls li a { color: var(--texte-doux); font-size: .9rem; }
