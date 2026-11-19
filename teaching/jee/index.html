@@ -1,0 +1,530 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Java EE Web Application Technologies - Mahmoud EL HAMLAOUI</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Mahmoud EL HAMLAOUI">
+<meta property="og:title" content="Java EE Web Application Technologies">
+
+
+  <link rel="canonical" href="https://m-elhamlaoui.github.io/teaching/jee/">
+  <meta property="og:url" content="https://m-elhamlaoui.github.io/teaching/jee/">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Mahmoud EL HAMLAOUI",
+      "url" : "https://m-elhamlaoui.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://m-elhamlaoui.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Mahmoud EL HAMLAOUI Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/main.css">
+
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/css/main_add.css">
+
+
+<meta http-equiv="cleartype" content="on">
+
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://m-elhamlaoui.github.io/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://m-elhamlaoui.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://m-elhamlaoui.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://m-elhamlaoui.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://m-elhamlaoui.github.io/">Mahmoud EL HAMLAOUI</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/cv/">Bio</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://m-elhamlaoui.github.io/images/img-meh.jpg" class="author__avatar" alt="Habilitated Associate Professor">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Habilitated Associate Professor</h3>
+    <p class="author__bio">Geek and Basketball player</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><a href="https://goo.gl/maps/BN4VVrcDbSeuk6kKA" target="_blank"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> ENSIAS</a></li>
+      
+      
+      
+      
+        <li><a href="mailto:mahmoud.elhamlaoui@ensias.um5.ac.ma"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+      
+        <li><a href="https://dblp.org/pers/h/Hamlaoui:Mahmoud_El.html"><i class="fa fa-fw fa-book" aria-hidden="true"></i> DBLP</a></li>
+     
+       
+        <li><a href="https://www.researchgate.net/profile/Mahmoud_El_Hamlaoui"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=sZe9-D4AAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+        <li><a href="https://twitter.com/elhamlaoui"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/mahmoud-el-hamlaoui"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <div class="archive jee-course">
+    <style>
+      .jee-course h2 { margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: .2em; }
+      .jee-course h3 { margin-top: 1.2em; font-size: 1em; }
+      .jee-course pre { font-size: .72em; line-height: 1.4; overflow-x: auto; background: #f7f7f7; border: 1px solid #e5e5e5; padding: .8em; }
+      .jee-course code { font-size: .9em; }
+      .jee-course table { font-size: .8em; width: auto; }
+      .jee-course .lab-list li { margin: .15em 0; }
+      .jee-course .note { font-size: .85em; background: #f5f5f5; border-left: 4px solid #999; padding: .6em 1em; }
+      .jee-course .takeaway { font-size: .9em; background: #f4f8fb; border-left: 4px solid #4a7fb0; padding: .5em 1em; }
+      .jee-course figure { margin: 1.2em auto; text-align: center; }
+      .jee-course figure img, .jee-course figure svg { max-width: 100%; height: auto; }
+      .jee-course figcaption { font-size: .78em; color: #666; margin-top: .4em; }
+      .jee-course figcaption .credit { display: block; font-size: .9em; color: #999; }
+      .jee-course .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1em; align-items: end; }
+      .jee-course .figs figure { margin: 0; }
+      .jee-course .reading li { margin-bottom: .4em; font-size: .9em; }
+    </style>
+
+    <h1 class="page__title">Java EE Web Application Technologies</h1>
+
+    <p>This course covers the main technologies used to build enterprise web applications on the Java platform
+    (Java EE / Jakarta EE): database access with JDBC, presentation with JSP and JSF, business components with EJB,
+    and object-relational mapping with Hibernate and JPA. Along the four labs, a single application is progressively
+    refactored into a clean layered architecture.</p>
+
+    <figure>
+      <img src="images/three_tier.svg" alt="Three-tier architecture" style="width: 380px;">
+      <figcaption>A multi-tier architecture: presentation, business logic and data tiers. The labs build each tier with a Java EE technology.
+      <span class="credit">Bartledan, <a href="https://commons.wikimedia.org/wiki/File:Overview_of_a_three-tier_application_vectorVersion.svg">Wikimedia Commons</a>, public domain</span></figcaption>
+    </figure>
+
+    <ul class="lab-list">
+      <li><a href="#lab1">Lab 1 &ndash; JDBC: database access</a></li>
+      <li><a href="#lab2">Lab 2 &ndash; JSP: the MVC presentation layer</a></li>
+      <li><a href="#lab3">Lab 3 &ndash; JSF: component-based web interfaces</a></li>
+      <li><a href="#lab4">Lab 4 &ndash; Hibernate and JPA: object-relational mapping</a></li>
+      <li><a href="#reading">Further reading</a></li>
+    </ul>
+
+    <p class="note">This page gives an overview of the labs. The full statements, step-by-step
+    instructions and solutions are provided to students during the course.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab1">Lab 1 &ndash; JDBC: database access</h2>
+    <p><strong>Goals:</strong> connect a Java application to a relational database with JDBC, externalize the
+    configuration, manage the connection inside an object, use <code>PreparedStatement</code> and
+    <code>DatabaseMetaData</code>, and apply the DAO and DTO patterns.</p>
+
+    <h3>Exercises</h3>
+    <ol>
+      <li><strong>Basic JDBC connection:</strong> a <code>HelloDB</code> class connects to the <code>humanresources</code>
+      database and prints the number of employees.</li>
+      <li><strong>Configuration and connection management:</strong> move the connection parameters to a
+      <code>configDB.properties</code> file; keep a single <code>Connection</code> per object, reuse it and close it
+      properly; write a reusable <code>countRowsInTable(String tableName)</code> method with a <code>PreparedStatement</code>.</li>
+      <li><strong>DAO and DTO patterns &ndash; a trip management application:</strong> DTOs carry the data between layers;
+      the DAO implementations use JDBC internally, convert each <code>ResultSet</code> into DTOs and never expose
+      <code>Connection</code> or <code>ResultSet</code>. Reflection: how to organize the code so that a change of business
+      domain (trips &rarr; events) has minimal impact?</li>
+      <li><strong>Metadata:</strong> count all the rows of the database by listing its tables with
+      <code>DatabaseMetaData</code>; optionally, generate the <code>CREATE TABLE</code> statement of a table from its metadata.</li>
+    </ol>
+<pre><code>public class PlaceDTO {
+    private Long id;
+    private String name;
+    // constructors, getters and setters
+}
+
+public interface PlaceDao {
+    Long createPlace(PlaceDTO p);
+    PlaceDTO findPlaceById(Long id);
+    boolean updatePlace(PlaceDTO p);
+    boolean removePlace(PlaceDTO p);
+}</code></pre>
+    <p class="takeaway"><strong>Takeaway:</strong> the DAO hides how data is stored; the rest of the application only
+    sees DTOs.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab2">Lab 2 &ndash; JSP: the MVC presentation layer</h2>
+    <p><strong>Goals:</strong> extend the trip application of Lab 1 into a layered <strong>MVC</strong> web application with
+    JSP as the view, and increase the level of abstraction step by step.</p>
+
+    <h3>Exercises</h3>
+    <ol>
+      <li><strong>Displaying data:</strong> a <code>PlaceController</code> servlet calls the DAO, stores the list of places in
+      the request and forwards it to <code>listPlaces.jsp</code>. No SQL in the JSP pages.</li>
+      <li><strong>The controller:</strong> map the servlet to <code>/places</code> and implement <code>doGet</code>.</li>
+      <li><strong>EL and JSTL:</strong> replace the Java scriptlets with EL expressions and <code>&lt;c:forEach&gt;</code>; the
+      pages only handle DTOs.</li>
+      <li><strong>User input:</strong> an <code>addPlace.jsp</code> form posted to the controller, which creates the place and
+      redirects to the list.</li>
+      <li><strong>Service layer:</strong> move the business logic from the controller to a <code>PlaceService</code>.</li>
+      <li><strong>Reflection:</strong> which layers change when the domain changes, and how to remove JDBC from the web
+      layer entirely or replace JSP with another view technology (Thymeleaf, REST API)?</li>
+    </ol>
+<pre><code>&lt;%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %&gt;
+
+&lt;ul&gt;
+    &lt;c:forEach var="place" items="${places}"&gt;
+        &lt;li&gt;${place.name}&lt;/li&gt;
+    &lt;/c:forEach&gt;
+&lt;/ul&gt;</code></pre>
+    <p>Target architecture: <strong>JSP (view) &rarr; controller (servlet) &rarr; service layer &rarr; DAO layer &rarr;
+    database</strong>.</p>
+    <p class="takeaway"><strong>Takeaway:</strong> each layer has a single responsibility; a view only displays data.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab3">Lab 3 &ndash; JSF: component-based web interfaces</h2>
+    <p><strong>Goals:</strong> build web interfaces with Jakarta Faces (managed beans and Facelets), handle forms,
+    navigation, validation and conversion, and connect the interface to a business layer made of EJBs.</p>
+
+    <h3>Exercises</h3>
+    <ol>
+      <li><strong>First JSF page:</strong> a <code>HelloBean</code> managed bean displays the current time.</li>
+      <li><strong>Deployment:</strong> package a WAR and deploy it on Apache Tomcat, then on WildFly; compare the two.</li>
+      <li><strong>Login form and navigation:</strong> redirect to a different page depending on the user.</li>
+      <li><strong>Authentication</strong> against a simulated database (an application-scoped <code>UserRepository</code>).</li>
+      <li><strong>Tables:</strong> display the users with <code>&lt;h:dataTable&gt;</code>.</li>
+      <li><strong>Advanced form</strong> with dates, amounts and addresses, using converters.</li>
+      <li><strong>JSF and DAO:</strong> reuse the <code>PlaceDao</code> to create, list and delete places from a JSF page.</li>
+      <li><strong>Validators and converters:</strong> built-in validators, a custom postal code validator, a custom
+      <code>Address</code> converter and global messages.</li>
+      <li><strong>EJB integration:</strong> a stateless <code>PlaceService</code> EJB injected into the JSF bean, with
+      container-managed transactions and role-based security (<code>@RolesAllowed</code>).</li>
+    </ol>
+<pre><code>@Named
+@RequestScoped
+public class HelloBean {
+    public String getCurrentTime() {
+        return java.time.LocalTime.now().withNano(0).toString();
+    }
+}
+
+&lt;h:body&gt;
+    &lt;h1&gt;Hello, it is #{helloBean.currentTime}&lt;/h1&gt;
+&lt;/h:body&gt;</code></pre>
+    <p>Target architecture: <strong>JSF &rarr; EJB (business layer) &rarr; DAO &rarr; database</strong>.</p>
+    <p class="takeaway"><strong>Takeaway:</strong> EJBs bring transactions, security and concurrency management for free;
+    they are worth it for enterprise applications, not for a simple CRUD.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab4">Lab 4 &ndash; Hibernate and JPA: object-relational mapping</h2>
+    <figure>
+      <svg viewBox="0 0 640 210" width="640" role="img" aria-label="Object-relational mapping">
+        <style>
+          .o { fill: #f4f8fb; stroke: #4a7fb0; stroke-width: 1.5; }
+          .r { fill: #fff; stroke: #555; stroke-width: 1.5; }
+          .t { font: 13px Georgia, serif; fill: #222; }
+          .h { font: bold 13px Georgia, serif; fill: #222; text-anchor: middle; }
+          .c { font: 12px Consolas, monospace; fill: #333; }
+          .a { stroke: #4a7fb0; stroke-width: 1.5; fill: none; stroke-dasharray: 5 3; marker-end: url(#fo); }
+        </style>
+        <defs><marker id="fo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4a7fb0"/></marker></defs>
+        <text class="h" x="110" y="18">Java objects</text>
+        <rect class="o" x="20" y="30" width="180" height="26"/><text class="h" x="110" y="48">Entreprise</text>
+        <rect class="o" x="20" y="56" width="180" height="50"/>
+        <text class="c" x="30" y="76">Long id</text><text class="c" x="30" y="96">String nom</text>
+        <rect class="o" x="20" y="130" width="180" height="26"/><text class="h" x="110" y="148">Employe</text>
+        <rect class="o" x="20" y="156" width="180" height="40"/><text class="c" x="30" y="180">String nom</text>
+        <line x1="110" y1="106" x2="110" y2="130" stroke="#4a7fb0" stroke-width="1.5"/>
+        <text class="c" x="118" y="123">1..*</text>
+        <text class="h" x="320" y="95">@Entity</text><text class="h" x="320" y="112">JPA / Hibernate</text>
+        <path class="a" d="M205,70 L435,70"/><path class="a" d="M205,170 L435,170"/>
+        <text class="h" x="530" y="18">Relational tables</text>
+        <rect class="r" x="440" y="30" width="180" height="26"/><text class="h" x="530" y="48">ENTREPRISE</text>
+        <rect class="r" x="440" y="56" width="180" height="50"/>
+        <text class="c" x="450" y="76">ID (PK)</text><text class="c" x="450" y="96">NOM</text>
+        <rect class="r" x="440" y="130" width="180" height="26"/><text class="h" x="530" y="148">EMPLOYE</text>
+        <rect class="r" x="440" y="156" width="180" height="40"/><text class="c" x="450" y="180">NOM, ENTREPRISE_ID (FK)</text>
+      </svg>
+      <figcaption>Object-relational mapping: classes become tables, attributes become columns, and an association
+      becomes a foreign key.</figcaption>
+    </figure>
+    <p><strong>Goals:</strong> use the Hibernate ORM, compare XML and annotation mappings, write HQL queries, move from
+    the Hibernate <code>Session</code> API to the JPA <code>EntityManager</code>, map relationships and inheritance, and
+    study performance issues (N+1 queries, connection pools).</p>
+
+    <h3>Exercises</h3>
+    <ol>
+      <li><strong>Inserting data:</strong> map an <code>Entreprise</code> (company) class to its table with an XML mapping file,
+      then with JPA annotations, and compare the two approaches.</li>
+      <li><strong>Retrieving an entity</strong> by its identifier, including the case where it does not exist.</li>
+      <li><strong>HQL queries:</strong> all companies, search by name with named parameters, sorting, counting.</li>
+      <li><strong>Update and delete</strong>, and the life cycle of entities.</li>
+      <li><strong>JPA <code>EntityManager</code>:</strong> redo the CRUD operations through JPA, with Hibernate as the provider.</li>
+      <li><strong>Relationships:</strong> <code>@OneToMany</code> / <code>@ManyToOne</code> between companies and employees,
+      <code>mappedBy</code> and cascades.</li>
+      <li><strong>Inheritance:</strong> <code>Employe</code>, <code>Manager</code> and <code>Developer</code>; the
+      <code>SINGLE_TABLE</code>, <code>JOINED</code> and <code>TABLE_PER_CLASS</code> strategies.</li>
+      <li><strong>Lazy vs. eager loading:</strong> reproduce the N+1 queries problem, then solve it with
+      <code>JOIN FETCH</code>.</li>
+      <li><strong>Connection pools:</strong> time 100 successive queries without a pool, with C3P0 and with HikariCP.</li>
+      <li><strong>DAO + Service architecture</strong> with JPA, transactions being handled in the service layer.</li>
+    </ol>
+
+    <table>
+      <thead><tr><th>Hibernate native API</th><th>JPA API</th></tr></thead>
+      <tbody>
+        <tr><td><code>SessionFactory</code></td><td><code>EntityManagerFactory</code></td></tr>
+        <tr><td><code>Session</code></td><td><code>EntityManager</code></td></tr>
+        <tr><td><code>session.save()</code></td><td><code>em.persist()</code></td></tr>
+        <tr><td><code>session.get()</code></td><td><code>em.find()</code></td></tr>
+        <tr><td><code>session.update()</code></td><td><code>em.merge()</code></td></tr>
+        <tr><td><code>session.delete()</code></td><td><code>em.remove()</code></td></tr>
+      </tbody>
+    </table>
+
+<pre><code>// N+1 queries: one query for the companies, then one query per company
+List&lt;Entreprise&gt; list = em.createQuery("FROM Entreprise", Entreprise.class)
+                          .getResultList();
+for (Entreprise e : list) {
+    e.getEmployes().size();
+}
+
+// Solution: fetch the employees in the same query
+SELECT e FROM Entreprise e JOIN FETCH e.employes</code></pre>
+    <p class="takeaway"><strong>Takeaway:</strong> an ORM removes most of the JDBC code, but you still need to understand the
+    SQL it generates.</p>
+
+<!-- ================================================================== -->
+    <h2 id="reading">Further reading</h2>
+    <ul class="reading">
+      <li>Martin Fowler, <em>Patterns of Enterprise Application Architecture</em>, Addison-Wesley, 2002.</li>
+      <li>Deepak Alur, John Crupi and Dan Malks, <em>Core J2EE Patterns: Best Practices and Design Strategies</em>, 2nd ed., Prentice Hall, 2003.</li>
+      <li>Christian Bauer, Gavin King and Gary Gregory, <em>Java Persistence with Hibernate</em>, 2nd ed., Manning, 2015.</li>
+      <li>Eclipse Foundation, <a href="https://jakarta.ee/learn/">Jakarta EE tutorials and specifications</a>.</li>
+    </ul>
+
+  </div>
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="https://m-elhamlaoui.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 Mahmoud EL HAMLAOUI. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://m-elhamlaoui.github.io/javascripts/bootstrap.min.js"></script>
+
+<script src="https://m-elhamlaoui.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

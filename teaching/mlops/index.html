@@ -1,0 +1,588 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>MLOps Methodology - Mahmoud EL HAMLAOUI</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Mahmoud EL HAMLAOUI">
+<meta property="og:title" content="MLOps Methodology">
+
+
+  <link rel="canonical" href="https://m-elhamlaoui.github.io/teaching/mlops/">
+  <meta property="og:url" content="https://m-elhamlaoui.github.io/teaching/mlops/">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Mahmoud EL HAMLAOUI",
+      "url" : "https://m-elhamlaoui.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://m-elhamlaoui.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Mahmoud EL HAMLAOUI Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/main.css">
+
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/css/main_add.css">
+
+
+<meta http-equiv="cleartype" content="on">
+
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://m-elhamlaoui.github.io/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://m-elhamlaoui.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://m-elhamlaoui.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://m-elhamlaoui.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://m-elhamlaoui.github.io/">Mahmoud EL HAMLAOUI</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/cv/">Bio</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://m-elhamlaoui.github.io/images/img-meh.jpg" class="author__avatar" alt="Habilitated Associate Professor">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Habilitated Associate Professor</h3>
+    <p class="author__bio">Geek and Basketball player</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><a href="https://goo.gl/maps/BN4VVrcDbSeuk6kKA" target="_blank"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> ENSIAS</a></li>
+      
+      
+      
+      
+        <li><a href="mailto:mahmoud.elhamlaoui@ensias.um5.ac.ma"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+      
+        <li><a href="https://dblp.org/pers/h/Hamlaoui:Mahmoud_El.html"><i class="fa fa-fw fa-book" aria-hidden="true"></i> DBLP</a></li>
+     
+       
+        <li><a href="https://www.researchgate.net/profile/Mahmoud_El_Hamlaoui"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=sZe9-D4AAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+        <li><a href="https://twitter.com/elhamlaoui"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/mahmoud-el-hamlaoui"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <div class="archive mlops-course">
+    <style>
+      .mlops-course h2 { margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: .2em; }
+      .mlops-course h3 { margin-top: 1.4em; font-size: 1.05em; }
+      .mlops-course pre { font-size: .72em; line-height: 1.4; overflow-x: auto; background: #f7f7f7; border: 1px solid #e5e5e5; padding: .8em; }
+      .mlops-course code { font-size: .9em; }
+      .mlops-course table { font-size: .8em; width: auto; }
+      .mlops-course .lab-list li { margin: .15em 0; }
+      .mlops-course .note { font-size: .85em; background: #f5f5f5; border-left: 4px solid #999; padding: .6em 1em; }
+      .mlops-course .takeaway { font-size: .9em; background: #f4f8fb; border-left: 4px solid #4a7fb0; padding: .5em 1em; }
+      .mlops-course figure { margin: 1.2em auto; text-align: center; }
+      .mlops-course figure img, .mlops-course figure svg { max-width: 100%; height: auto; }
+      .mlops-course figcaption { font-size: .78em; color: #666; margin-top: .4em; }
+      .mlops-course figcaption .credit { display: block; font-size: .9em; color: #999; }
+      .mlops-course .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1em; align-items: end; }
+      .mlops-course .figs figure { margin: 0; }
+      .mlops-course .reading li { margin-bottom: .4em; font-size: .9em; }
+    </style>
+
+    <h1 class="page__title">MLOps Methodology</h1>
+
+    <p>Training a good model is only a small part of a real machine learning system. Around the model, a production
+    system needs data collection and validation, feature pipelines, serving infrastructure, monitoring and a process
+    to retrain and redeploy. <strong>MLOps</strong> (Machine Learning Operations) is the set of practices that brings
+    the ideas of DevOps to machine learning, so that models can be deployed reliably and kept useful over time.</p>
+
+    <figure>
+      <img src="images/mlops_venn.svg" alt="MLOps at the intersection of Machine Learning, DevOps and Data Engineering" style="width: 380px;">
+      <figcaption>MLOps lies at the intersection of Machine Learning, DevOps and Data Engineering.
+      <span class="credit">Image: Cmbreuel, <a href="https://commons.wikimedia.org/wiki/File:ML_Ops_Venn_Diagram.svg">Wikimedia Commons</a>, CC BY-SA 4.0</span></figcaption>
+    </figure>
+
+    <p>This course follows the full life cycle of a machine learning project: a refresher on machine learning, the
+    stages of a project, deployment strategies, monitoring and packaging, and the specific way models should be
+    developed when they are meant for production.</p>
+
+    <ul class="lab-list">
+      <li><a href="#part1">Part 1 &ndash; Machine learning refresher</a></li>
+      <li><a href="#part2">Part 2 &ndash; The machine learning project life cycle</a></li>
+      <li><a href="#part3">Part 3 &ndash; Deployment strategies</a></li>
+      <li><a href="#part4">Part 4 &ndash; Monitoring and packaging</a></li>
+      <li><a href="#part5">Part 5 &ndash; Modeling for production</a></li>
+      <li><a href="#reading">Further reading</a></li>
+    </ul>
+
+    <p class="note">This page gives an overview of the course. The slides and notebooks are provided to students
+    during the course.</p>
+
+<!-- ================================================================== -->
+    <h2 id="part1">Part 1 &ndash; Machine learning refresher</h2>
+
+    <h3>Families of machine learning</h3>
+    <ul>
+      <li><strong>Supervised learning:</strong> learn a mapping from inputs to known outputs (labels), for
+      <em>regression</em> (predicting a number, such as a price) or <em>classification</em> (predicting a category,
+      such as spam or not spam).</li>
+      <li><strong>Unsupervised learning:</strong> find structure in unlabeled data, for instance clusters of similar
+      customers or a lower-dimensional representation.</li>
+      <li><strong>Reinforcement learning:</strong> an agent learns a behaviour by trial and error, from the rewards it
+      receives from its environment.</li>
+    </ul>
+    <p>The data itself can be <strong>structured</strong> (tables, databases) or <strong>unstructured</strong>
+    (images, audio, text), which strongly influences the techniques used to label, augment and analyze it.</p>
+
+    <h3>Three classic algorithms</h3>
+    <div class="figs">
+      <figure>
+        <img src="images/linear_regression.svg" alt="Linear regression">
+        <figcaption><strong>Linear regression</strong> fits a straight line that minimizes the squared error.
+        <span class="credit">Sewaqu, <a href="https://commons.wikimedia.org/wiki/File:Linear_regression.svg">Wikimedia Commons</a>, public domain</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/logistic_curve.svg" alt="Logistic curve">
+        <figcaption><strong>Logistic regression</strong> turns a linear score into a probability with the sigmoid function.
+        <span class="credit">Qef, <a href="https://commons.wikimedia.org/wiki/File:Logistic-curve.svg">Wikimedia Commons</a>, public domain</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/knn.svg" alt="k-nearest neighbors classification" style="width: 220px;">
+        <figcaption><strong>k-nearest neighbors</strong> assigns the majority class of the k closest examples.
+        <span class="credit">AnAj, <a href="https://commons.wikimedia.org/wiki/File:KnnClassification.svg">Wikimedia Commons</a>, CC BY-SA 3.0</span></figcaption>
+      </figure>
+    </div>
+
+    <h3>The scikit-learn workflow</h3>
+    <p>With scikit-learn, every supervised model follows the same four steps, which makes it easy to compare several
+    estimators on the same data.</p>
+<pre><code>from sklearn.linear_model import LinearRegression
+
+model = LinearRegression()   # 1. choose an estimator and its hyperparameters
+model.fit(X, y)              # 2. train the model
+model.score(X, y)            # 3. evaluate it
+model.predict(X_new)         # 4. use it</code></pre>
+    <p>The usual working method: split the data into training and test sets, train a first simple model, evaluate it
+    on data it has never seen, then iterate on the features and hyperparameters.</p>
+
+<!-- ================================================================== -->
+    <h2 id="part2">Part 2 &ndash; The machine learning project life cycle</h2>
+    <p>A machine learning project goes through four stages, with frequent back-and-forth between them. The course
+    uses a <strong>speech recognition</strong> system as a running example, and a <strong>visual inspection</strong>
+    system (detecting defects on products in a factory) as a second case study.</p>
+
+    <table>
+      <thead><tr><th>Stage</th><th>Key questions</th><th>Speech recognition example</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Scoping</strong></td><td>Which problem? Which metrics? Which resources and timeline?</td>
+            <td>Decide to work on voice search; key metrics are accuracy, latency and throughput.</td></tr>
+        <tr><td><strong>Data</strong></td><td>How is the data defined, collected and labeled consistently?</td>
+            <td>Is the transcription convention consistent (&laquo;&nbsp;um&nbsp;&raquo;, punctuation)? How much silence before and after each clip?</td></tr>
+        <tr><td><strong>Modeling</strong></td><td>Which model, which baseline, how to analyze errors?</td>
+            <td>Error analysis shows where the model is weak, for instance with background car noise.</td></tr>
+        <tr><td><strong>Deployment</strong></td><td>How to serve, monitor and maintain the model?</td>
+            <td>A mobile app sends audio to a prediction server; the system is monitored after release.</td></tr>
+      </tbody>
+    </table>
+
+    <figure>
+      <img src="images/crisp_dm.png" alt="CRISP-DM process diagram" style="width: 360px;">
+      <figcaption>The CRISP-DM process, a classic model of the iterative life cycle of a data project.
+      <span class="credit">Kenneth Jensen, <a href="https://commons.wikimedia.org/wiki/File:CRISP-DM_Process_Diagram.png">Wikimedia Commons</a>, CC BY-SA 3.0</span></figcaption>
+    </figure>
+
+    <h3>Data drift and concept drift</h3>
+    <p>Once in production, the world keeps changing, and a model that was correct when it was trained slowly becomes
+    wrong:</p>
+    <ul>
+      <li><strong>Data drift:</strong> the distribution of the inputs changes. Example: a new microphone model, or
+      users who start speaking from noisier places.</li>
+      <li><strong>Concept drift:</strong> the relationship between inputs and outputs changes. Example: for a fraud
+      detection model, the behaviour of customers changes during a crisis, so the same transaction no longer means the
+      same thing.</li>
+    </ul>
+    <p class="takeaway"><strong>Takeaway:</strong> deployment is not the end of a project, but the beginning of its
+    maintenance.</p>
+
+<!-- ================================================================== -->
+    <h2 id="part3">Part 3 &ndash; Deployment strategies</h2>
+    <p>Three common deployment cases: a <strong>new product or capability</strong>, the <strong>automation or
+    assistance of a manual task</strong>, and the <strong>replacement of a previous ML system</strong>. In all cases,
+    the goal is to send traffic gradually to the new model, monitor it, and be able to roll back. Like modeling,
+    deployment is iterative.</p>
+
+    <figure>
+      <svg viewBox="0 0 720 230" width="720" role="img" aria-label="Shadow, canary and blue-green deployment">
+        <style>
+          .bx { fill: #fff; stroke: #4a7fb0; stroke-width: 1.5; }
+          .bx2 { fill: #f4f8fb; stroke: #4a7fb0; stroke-width: 1.5; }
+          .gr { fill: #fff; stroke: #999; stroke-width: 1.5; stroke-dasharray: 4 3; }
+          .t { font: 13px Georgia, serif; fill: #222; text-anchor: middle; }
+          .s { font: 11px Georgia, serif; fill: #666; text-anchor: middle; }
+          .h { font: bold 14px Georgia, serif; fill: #222; text-anchor: middle; }
+          .ar { stroke: #555; stroke-width: 1.5; fill: none; marker-end: url(#fl); }
+          .ar2 { stroke: #555; stroke-width: 4; fill: none; marker-end: url(#fl); }
+          .ard { stroke: #999; stroke-width: 1.5; fill: none; stroke-dasharray: 4 3; marker-end: url(#fl); }
+        </style>
+        <defs><marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+        <!-- Shadow -->
+        <text class="h" x="120" y="20">Shadow mode</text>
+        <rect class="bx" x="70" y="40" width="100" height="34" rx="4"/><text class="t" x="120" y="62">Input</text>
+        <path class="ar" d="M120,74 L60,120"/><path class="ard" d="M120,74 L180,120"/>
+        <rect class="bx2" x="10" y="122" width="100" height="34" rx="4"/><text class="t" x="60" y="144">Human</text>
+        <rect class="gr" x="130" y="122" width="100" height="34" rx="4"/><text class="t" x="180" y="144">ML model</text>
+        <text class="s" x="60" y="178">decides</text><text class="s" x="180" y="178">logged, compared</text>
+        <!-- Canary -->
+        <text class="h" x="360" y="20">Canary deployment</text>
+        <rect class="bx" x="310" y="40" width="100" height="34" rx="4"/><text class="t" x="360" y="62">Traffic</text>
+        <path class="ar2" d="M360,74 L300,120"/><path class="ar" d="M360,74 L420,120"/>
+        <rect class="bx2" x="250" y="122" width="100" height="34" rx="4"/><text class="t" x="300" y="144">Old model</text>
+        <rect class="bx" x="370" y="122" width="100" height="34" rx="4"/><text class="t" x="420" y="144">New model</text>
+        <text class="s" x="300" y="178">95%</text><text class="s" x="420" y="178">5%, then ramp up</text>
+        <!-- Blue-green -->
+        <text class="h" x="600" y="20">Blue-green deployment</text>
+        <rect class="bx" x="550" y="40" width="100" height="34" rx="4"/><text class="t" x="600" y="62">Router</text>
+        <path class="ard" d="M600,74 L540,120"/><path class="ar2" d="M600,74 L660,120"/>
+        <rect class="gr" x="490" y="122" width="100" height="34" rx="4"/><text class="t" x="540" y="144">Blue (old)</text>
+        <rect class="bx2" x="610" y="122" width="100" height="34" rx="4"/><text class="t" x="660" y="144">Green (new)</text>
+        <text class="s" x="540" y="178">kept for rollback</text><text class="s" x="660" y="178">100% after switch</text>
+        <text class="s" x="360" y="218">Thick arrow: traffic used for decisions &middot; dashed: kept aside or not used</text>
+      </svg>
+      <figcaption>Three ways to put a new model in production with limited risk.</figcaption>
+    </figure>
+
+    <ul>
+      <li><strong>Shadow mode:</strong> the ML system runs in parallel with the human (or the old system). Its outputs
+      are recorded and compared, but not used for any decision. This is a safe way to measure the performance of a
+      model on real data before trusting it.</li>
+      <li><strong>Canary deployment:</strong> roll out the new model to a small fraction of the traffic (say 5%),
+      monitor it, then ramp up gradually. An error only affects a few users and is detected early.</li>
+      <li><strong>Blue-green deployment:</strong> the old version (blue) and the new one (green) run side by side; the
+      router switches all the traffic to green at once, and switching back to blue gives an immediate rollback.</li>
+    </ul>
+
+    <h3>Degrees of automation</h3>
+    <p>Deployment is not all-or-nothing. A system can move step by step from human decisions to full automation,
+    stopping at the level that makes sense for the application:</p>
+    <table>
+      <thead><tr><th>Human only</th><th>Shadow mode</th><th>AI assistance</th><th>Partial automation</th><th>Full automation</th></tr></thead>
+      <tbody><tr>
+        <td>no ML</td>
+        <td>ML runs, human decides</td>
+        <td>ML highlights, human decides</td>
+        <td>ML decides when confident, otherwise asks a human</td>
+        <td>ML decides</td>
+      </tr></tbody>
+    </table>
+    <p>In the visual inspection example, <em>AI assistance</em> could highlight the suspicious area on a picture for a
+    human inspector, while <em>partial automation</em> would let the model accept or reject products by itself and
+    send only the uncertain cases to a human.</p>
+
+<!-- ================================================================== -->
+    <h2 id="part4">Part 4 &ndash; Monitoring and packaging</h2>
+    <p>Monitoring makes sure the system keeps meeting expectations after deployment. A good practice is to
+    brainstorm everything that could go wrong, define metrics that would detect each problem, start with many of them,
+    and gradually remove those that turn out not to be useful. Each metric gets a threshold that triggers an alert.</p>
+    <table>
+      <thead><tr><th>Metrics</th><th>What they detect</th><th>Examples (speech recognition)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Software</strong></td><td>the health of the service</td><td>memory, compute, latency, throughput, server load</td></tr>
+        <tr><td><strong>Input</strong></td><td>changes in the data (data drift)</td><td>average input length or volume, number of missing values, average image brightness</td></tr>
+        <tr><td><strong>Output</strong></td><td>changes in the behaviour of the model or of the users</td><td>number of empty outputs, number of times a user redoes a search or switches to typing</td></tr>
+      </tbody>
+    </table>
+
+    <figure>
+      <img src="images/grafana.png" alt="Grafana dashboard" style="width: 560px;">
+      <figcaption>A Grafana dashboard: metrics collected by Prometheus are displayed as time series, with alerts on thresholds.
+      <span class="credit">Linux Screenshots (xmodulo), <a href="https://commons.wikimedia.org/wiki/File:Grafana_dashboard_(2016).png">Wikimedia Commons</a>, CC BY 2.0</span></figcaption>
+    </figure>
+
+    <h3>In practice</h3>
+    <ul>
+      <li><strong>Packaging:</strong> typically, the trained model is serialized and wrapped in a small prediction API (for
+      instance with FastAPI), then packaged in a Docker image so that it runs the same way on every environment.</li>
+      <li><strong>Monitoring:</strong> the API exposes its metrics to <strong>Prometheus</strong>, which collects them
+      periodically; <strong>Grafana</strong> displays them in dashboards and raises alerts.</li>
+    </ul>
+
+<!-- ================================================================== -->
+    <h2 id="part5">Part 5 &ndash; Modeling for production</h2>
+
+    <h3>Model-centric vs. data-centric AI</h3>
+    <p>The <em>model-centric</em> approach keeps the data fixed and improves the code of the model. The
+    <em>data-centric</em> approach keeps the model fixed and improves the quality of the data: consistent labels,
+    better coverage of rare cases, cleaning of noisy examples. In many practical projects, the second one brings more
+    progress for less effort.</p>
+
+    <h3>An iterative process</h3>
+    <p>Model development is a loop: choose a model, hyperparameters and data &rarr; train &rarr; run an error
+    analysis &rarr; decide what to improve. Error analysis groups mistakes by category (for instance car noise, people
+    noise, low bandwidth) to focus the effort where it pays off most.</p>
+
+    <h3>Beyond the average test score</h3>
+    <p>A good average score on the test set is not enough to deploy a model:</p>
+    <ul>
+      <li><strong>Disproportionately important examples:</strong> in web search, navigational queries (such as
+      &laquo;&nbsp;YouTube&nbsp;&raquo;) must always return the right result, even if they are a small part of the data.</li>
+      <li><strong>Key slices of the data:</strong> a loan approval model must not discriminate by ethnicity, gender,
+      location or language; a product recommender must treat all major categories of users, retailers and products
+      fairly.</li>
+      <li><strong>Rare classes</strong> and skewed data distributions, where accuracy alone is misleading.</li>
+    </ul>
+
+    <h3>Establishing a baseline</h3>
+    <p>Before trying to improve a model, establish a baseline: <strong>human-level performance</strong> (especially
+    for unstructured data such as images and audio), a literature search, open-source implementations, or an older
+    system. The baseline tells what is possible and where the irreducible error lies.</p>
+
+    <h3>Getting started</h3>
+    <ul>
+      <li>Do a quick literature search to see what is possible (courses, blogs, open-source projects).</li>
+      <li>Reuse an open-source implementation when one is available.</li>
+      <li>Take <strong>deployment constraints</strong> (latency, memory, cost) into account when choosing a model if a
+      baseline is already established and the goal is to deploy; ignore them if the goal is only to explore what is
+      possible.</li>
+    </ul>
+    <p class="takeaway"><strong>Takeaway:</strong> a reasonable algorithm with good data often outperforms a great
+    algorithm with poor data.</p>
+
+<!-- ================================================================== -->
+    <h2 id="reading">Further reading</h2>
+    <ul class="reading">
+      <li>Andrew Ng, <em>Machine Learning in Production</em>, DeepLearning.AI &ndash; the course this one is inspired by.</li>
+      <li>D. Sculley et al., &laquo;&nbsp;Hidden Technical Debt in Machine Learning Systems&nbsp;&raquo;, <em>NeurIPS</em>, 2015.</li>
+      <li>Chip Huyen, <em>Designing Machine Learning Systems</em>, O'Reilly, 2022.</li>
+      <li>Google Cloud, <a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">MLOps: Continuous delivery and automation pipelines in machine learning</a>.</li>
+      <li>Martin Fowler, <a href="https://martinfowler.com/bliki/BlueGreenDeployment.html">BlueGreenDeployment</a>, and Danilo Sato, <a href="https://martinfowler.com/bliki/CanaryRelease.html">CanaryRelease</a>, martinfowler.com.</li>
+    </ul>
+
+  </div>
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="https://m-elhamlaoui.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 Mahmoud EL HAMLAOUI. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://m-elhamlaoui.github.io/javascripts/bootstrap.min.js"></script>
+
+<script src="https://m-elhamlaoui.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,584 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>DevOps &amp; Best Practices - Mahmoud EL HAMLAOUI</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Mahmoud EL HAMLAOUI">
+<meta property="og:title" content="DevOps &amp; Best Practices">
+
+
+  <link rel="canonical" href="https://m-elhamlaoui.github.io/teaching/devops/">
+  <meta property="og:url" content="https://m-elhamlaoui.github.io/teaching/devops/">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Mahmoud EL HAMLAOUI",
+      "url" : "https://m-elhamlaoui.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://m-elhamlaoui.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Mahmoud EL HAMLAOUI Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/main.css">
+
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/css/main_add.css">
+
+
+<meta http-equiv="cleartype" content="on">
+
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://m-elhamlaoui.github.io/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://m-elhamlaoui.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://m-elhamlaoui.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://m-elhamlaoui.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://m-elhamlaoui.github.io/">Mahmoud EL HAMLAOUI</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/cv/">Bio</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://m-elhamlaoui.github.io/images/img-meh.jpg" class="author__avatar" alt="Habilitated Associate Professor">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Habilitated Associate Professor</h3>
+    <p class="author__bio">Geek and Basketball player</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><a href="https://goo.gl/maps/BN4VVrcDbSeuk6kKA" target="_blank"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> ENSIAS</a></li>
+      
+      
+      
+      
+        <li><a href="mailto:mahmoud.elhamlaoui@ensias.um5.ac.ma"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+      
+        <li><a href="https://dblp.org/pers/h/Hamlaoui:Mahmoud_El.html"><i class="fa fa-fw fa-book" aria-hidden="true"></i> DBLP</a></li>
+     
+       
+        <li><a href="https://www.researchgate.net/profile/Mahmoud_El_Hamlaoui"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=sZe9-D4AAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+        <li><a href="https://twitter.com/elhamlaoui"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/mahmoud-el-hamlaoui"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <div class="archive devops-course">
+    <style>
+      .devops-course h2 { margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: .2em; }
+      .devops-course h3 { margin-top: 1.2em; font-size: 1em; }
+      .devops-course pre { font-size: .72em; line-height: 1.4; overflow-x: auto; background: #f7f7f7; border: 1px solid #e5e5e5; padding: .8em; }
+      .devops-course code { font-size: .9em; }
+      .devops-course .lab-list li { margin: .15em 0; }
+      .devops-course .note { font-size: .85em; background: #f5f5f5; border-left: 4px solid #999; padding: .6em 1em; }
+      .devops-course .goal { font-style: italic; }
+      .devops-course .takeaway { font-size: .9em; background: #f4f8fb; border-left: 4px solid #4a7fb0; padding: .5em 1em; }
+      .devops-course figure { margin: 1.2em auto; text-align: center; }
+      .devops-course figure img, .devops-course figure svg { max-width: 100%; height: auto; }
+      .devops-course figcaption { font-size: .78em; color: #666; margin-top: .4em; }
+      .devops-course figcaption .credit { display: block; font-size: .9em; color: #999; }
+      .devops-course .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1em; align-items: end; }
+      .devops-course .figs figure { margin: 0; }
+      .devops-course .reading li { margin-bottom: .4em; font-size: .9em; }
+    </style>
+
+    <h1 class="page__title">DevOps &amp; Best Practices</h1>
+
+    <p>DevOps brings development and operations together around a shared goal: delivering software quickly,
+    reliably and repeatedly. This course covers the core building blocks of a DevOps toolchain &mdash;
+    containerization, infrastructure automation and container orchestration &mdash; through six hands-on labs.</p>
+
+    <figure>
+      <img src="images/devops_toolchain.svg" alt="DevOps toolchain" style="width: 480px;">
+      <figcaption>The DevOps loop: plan, create, verify, package, release, configure and monitor, then start again.
+      <span class="credit">Kharnagy, <a href="https://commons.wikimedia.org/wiki/File:Devops-toolchain.svg">Wikimedia Commons</a>, CC BY-SA 4.0</span></figcaption>
+    </figure>
+
+    <ul class="lab-list">
+      <li><a href="#lab1">Lab 1 &ndash; Docker: containerizing applications</a></li>
+      <li><a href="#lab2">Lab 2 &ndash; Ansible: setting up the environment</a></li>
+      <li><a href="#lab3">Lab 3 &ndash; Ansible: playbooks and handlers</a></li>
+      <li><a href="#lab4">Lab 4 &ndash; Ansible: dynamic inventory</a></li>
+      <li><a href="#lab5">Lab 5 &ndash; Kubernetes: Pods, Deployments and Services</a></li>
+      <li><a href="#lab6">Lab 6 &ndash; Kubernetes: Ingress, Secrets and Volumes</a></li>
+      <li><a href="#reading">Further reading</a></li>
+    </ul>
+
+    <p class="note">This page gives an overview of the labs. The full statements, step-by-step
+    instructions and solutions are provided to students during the course.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab1">Lab 1 &ndash; Docker: containerizing applications</h2>
+    <p class="goal">&ldquo;The most powerful tool we have as developers is automation.&rdquo; &mdash; Scott Hanselman</p>
+    <p><strong>Goals:</strong> understand images and containers, package applications with a Dockerfile, and run
+    multi-container applications with Docker Compose.</p>
+
+    <figure>
+      <img src="images/docker_vs_vm.jpg" alt="Containers compared with virtual machines" style="width: 440px;">
+      <figcaption>Containers share the kernel of the host operating system, whereas each virtual machine runs its own guest operating system: containers are lighter and start in seconds.
+      <span class="credit">Drinkler, <a href="https://commons.wikimedia.org/wiki/File:Dockervsvm.jpg">Wikimedia Commons</a>, CC BY-SA 4.0</span></figcaption>
+    </figure>
+
+    <h3>Exercise 1 &ndash; Docker commands</h3>
+    <p>Pull the Ubuntu image from Docker Hub, run a container in detached mode named after you, install an Apache
+    HTTP server inside it with <code>docker exec</code>, and use port mapping to reach the server through port 80 of the
+    host. Finally, inspect the container to find its IP address.</p>
+<pre><code>docker pull ubuntu
+docker images
+docker run -dit -p 80:80 --name my-container ubuntu
+docker exec -it my-container apt-get update
+docker exec -it my-container apt-get install apache2
+docker exec -it my-container service apache2 start
+curl localhost:80
+docker inspect my-container | grep -i "IPAddress"</code></pre>
+
+    <h3>Exercise 2 &ndash; Writing Dockerfiles</h3>
+    <ul>
+      <li>Write a Dockerfile for the <em>Guess</em> application.</li>
+      <li>Deploy a Flask web application that reads IoT sensor data from a CSV file and displays it on a web page,
+      then describe it with a <code>docker-compose</code> file.</li>
+      <li>Deploy the Spring Boot application <code>spring-guides/gs-spring-boot</code> in three ways: locally, with a
+      Dockerfile, and with <code>docker-compose</code> together with a MySQL database.</li>
+    </ul>
+
+    <h3>Exercises 3 and 4 &ndash; Sharing and visualizing</h3>
+    <ul>
+      <li>Publish the image of the Flask application on Docker Hub.</li>
+      <li>Challenge: display the sensor data in a Grafana dashboard, itself deployed in a container.</li>
+    </ul>
+    <p class="takeaway"><strong>Takeaway:</strong> an image is a reproducible package of an application and its
+    dependencies; a container is a running instance of it.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab2">Lab 2 &ndash; Ansible: setting up the environment</h2>
+    <p><strong>Goals:</strong> build a small lab with one Ansible control node and two managed nodes
+    (<code>node1</code>, <code>node2</code>), and check that Ansible can reach them.</p>
+
+    <h3>Main steps</h3>
+    <ol>
+      <li><strong>Network:</strong> Ubuntu Server virtual machines on VirtualBox (bridged network); make sure each machine
+      has its own IP address and regenerate the MAC address of cloned machines.</li>
+      <li><strong>Host names and name resolution:</strong> rename the machines (<code>ansible-control</code>, <code>node1</code>,
+      <code>node2</code>) and configure <code>/etc/hosts</code>.</li>
+      <li><strong>SSH:</strong> prepare SSH access on the managed nodes, test it from the control node.</li>
+      <li><strong>Ansible:</strong> install Ansible on the control node, test the connection with a password
+      (<code>sshpass</code>), then switch to key-based authentication.</li>
+      <li><strong>Inventory:</strong> create a clean inventory without passwords and run an ad-hoc <code>ping</code>.</li>
+    </ol>
+<pre><code># inventory.ini
+[nodes]
+node1 ansible_host=node1
+node2 ansible_host=node2
+
+[nodes:vars]
+ansible_user=ubuntu
+ansible_become=true
+
+$ ansible-inventory -i inventory.ini --list
+$ ansible -i inventory.ini nodes -m ping</code></pre>
+
+    <h3>Lightweight variant &ndash; nodes in Docker containers</h3>
+    <p>The virtual machines are replaced by Docker containers driven from Ubuntu on WSL2: install WSL2 and Docker,
+    start a container running an SSH server as an Ansible node, test SSH from WSL, then create the Ansible project and
+    its inventory. The variant also discusses what happens to the data when a container is stopped or removed, and
+    how to keep it with a volume.</p>
+    <p class="takeaway"><strong>Takeaway:</strong> Ansible is agentless: it only needs SSH access and Python on the managed
+    nodes.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab3">Lab 3 &ndash; Ansible: playbooks and handlers</h2>
+    <p><strong>Goals:</strong> structure a minimal YAML playbook, install a package and manage a service, and learn the
+    basics of debugging with <code>--check</code> and verbosity levels.</p>
+
+    <h3>Playbooks</h3>
+    <ul>
+      <li>Run and analyze a series of playbooks: run a command on a node, run several plays on different groups of
+      hosts (stop the web services, shut down the databases, restart the servers, then start them again in order).</li>
+      <li>Write a minimal playbook that copies a file using variables, then extend it step by step.</li>
+      <li>Try the playbooks in dry-run mode (<code>--check</code>) and with increasing verbosity (<code>-v</code>,
+      <code>-vvv</code>).</li>
+    </ul>
+
+    <h3>Handlers and notifications</h3>
+    <p>Use <code>notify</code> and <strong>handlers</strong> to trigger an action only when a task has actually changed
+    something, and run the playbook twice to check that it is <strong>idempotent</strong>.</p>
+<pre><code>---
+- name: Lab 3 - Handlers
+  hosts: nodes
+  become: false
+
+  tasks:
+    - name: Add an application setting
+      ansible.builtin.lineinfile:
+        path: /home/ansible/app.conf
+        line: "FEATURE_X=true"
+        create: true
+      notify: Apply configuration
+
+  handlers:
+    - name: Apply configuration
+      ansible.builtin.command:
+        cmd: echo "Configuration applied" &gt;&gt; /home/ansible/handler.log</code></pre>
+    <p class="takeaway"><strong>Takeaway:</strong> a playbook describes a desired state; running it again must not change a
+    system that is already in that state.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab4">Lab 4 &ndash; Ansible: dynamic inventory</h2>
+    <p><strong>Goals:</strong> replace the static inventory with a script. Ansible runs the script, the script returns
+    JSON, and Ansible interprets this JSON as an inventory.</p>
+    <ul>
+      <li>Write a Python script (<code>inventory_docker.py</code>) that lists the running Docker containers
+      (<code>docker ps</code>), keeps those exposing an SSH port, and builds the <code>nodes</code> group with the
+      connection variables of each host (<code>_meta.hostvars</code>).</li>
+      <li>Make it executable and check the result with <code>ansible-inventory --graph</code>.</li>
+      <li>Use it with ad-hoc commands and playbooks, exactly like a static inventory.</li>
+    </ul>
+<pre><code>chmod +x inventory_docker.py
+ansible-inventory -i inventory_docker.py --graph
+ansible -i inventory_docker.py nodes -m ping
+ansible-playbook -i inventory_docker.py test.yml</code></pre>
+    <p class="takeaway"><strong>Takeaway:</strong> in dynamic environments (containers, cloud), the inventory is discovered,
+    not written by hand.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab5">Lab 5 &ndash; Kubernetes: Pods, Deployments and Services</h2>
+    <figure>
+      <img src="images/kubernetes.png" alt="Kubernetes architecture" style="width: 560px;">
+      <figcaption>Kubernetes architecture: the control plane (called &ldquo;master&rdquo; in this figure) schedules Pods on the worker nodes and keeps the observed state equal to the desired state.
+      <span class="credit">Khtan66, <a href="https://commons.wikimedia.org/wiki/File:Kubernetes.png">Wikimedia Commons</a>, CC BY-SA 4.0</span></figcaption>
+    </figure>
+    <p><strong>Goals:</strong> deploy, scale, expose and update an application on a local Kubernetes cluster.</p>
+    <ul>
+      <li><strong>Setup:</strong> install Minikube and <code>kubectl</code>, start the cluster, preload the images and create a
+      dedicated namespace.</li>
+      <li><strong>Architecture:</strong> desired state vs. observed state; control plane and worker nodes; the resources used
+      in the lab.</li>
+      <li><strong>Pods:</strong> write a Pod manifest, create the Pod and inspect it.</li>
+      <li><strong>Deployments:</strong> deploy several replicas, delete a Pod and observe how Kubernetes recreates it
+      (self-healing through the ReplicaSet).</li>
+      <li><strong>Scaling:</strong> change the number of replicas declaratively (manifest) and imperatively
+      (<code>kubectl scale</code>).</li>
+      <li><strong>Services:</strong> ClusterIP, NodePort and LoadBalancer; how <code>port</code>, <code>targetPort</code> and
+      <code>nodePort</code> fit together.</li>
+      <li><strong>Rolling updates:</strong> deploy a new version of the image, follow the rollout, then roll back.</li>
+      <li><strong>Final exercise:</strong> deploy a complete &ldquo;Hello Kubernetes&rdquo; application.</li>
+    </ul>
+<pre><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  namespace: atelier
+spec:
+  replicas: 3
+  selector:
+    matchLabels: { app: web }
+  template:
+    metadata:
+      labels: { app: web }
+    spec:
+      containers:
+        - name: web-ctr
+          image: nigelpoulton/k8sbook:1.0
+          ports:
+            - containerPort: 8080
+
+$ kubectl apply -f deploy.yml
+$ kubectl scale deployment/web --replicas=5 -n atelier
+$ kubectl rollout status deployment/web -n atelier
+$ kubectl rollout undo deployment/web -n atelier</code></pre>
+    <p class="takeaway"><strong>Takeaway:</strong> you declare what you want; Kubernetes continuously reconciles the cluster
+    with that declaration.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab6">Lab 6 &ndash; Kubernetes: Ingress, Secrets and Volumes</h2>
+    <p><strong>Goals:</strong> expose several applications through a single entry point, handle sensitive data and keep
+    data beyond the life of a Pod.</p>
+
+    <h3>Ingress &ndash; HTTP routing</h3>
+    <p>Enable the Ingress add-on of Minikube, deploy two applications (&ldquo;blue&rdquo; and &ldquo;red&rdquo;), and route
+    the traffic by path, then by host name. A last exercise adds HTTPS with a TLS secret.</p>
+<pre><code>apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-atelier
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: 127.0.0.1.nip.io
+    http:
+      paths:
+      - path: /blue(/|$)(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service: { name: svc-blue, port: { number: 80 } }
+      - path: /red(/|$)(.*)
+        pathType: ImplementationSpecific
+        backend:
+          service: { name: svc-red, port: { number: 80 } }</code></pre>
+
+    <h3>Secrets</h3>
+    <p>Types of Secrets; creation from the command line and from a manifest; use of a Secret as environment variables
+    or as mounted files; difference with a ConfigMap.</p>
+<pre><code>kubectl create secret generic db-credentials \
+  --from-literal=username=admin \
+  --from-literal=password=MyPassword123</code></pre>
+
+    <h3>Volumes</h3>
+    <p>PersistentVolumes and PersistentVolumeClaims: store data in a volume, check that it survives the deletion of the
+    Pod, then run a PostgreSQL database with persistent storage.</p>
+
+    <h3>Wrap-up</h3>
+    <p>Deploy a complete web stack combining a Deployment, a Service, an Ingress, a Secret, a ConfigMap and a persistent
+    volume.</p>
+    <p class="takeaway"><strong>Takeaway:</strong> configuration, secrets and data are kept outside the container image,
+    so that the same image can run in every environment.</p>
+
+<!-- ================================================================== -->
+    <h2 id="reading">Further reading</h2>
+    <ul class="reading">
+      <li>Gene Kim, Jez Humble, Patrick Debois and John Willis, <em>The DevOps Handbook</em>, IT Revolution, 2016.</li>
+      <li>Jez Humble and David Farley, <em>Continuous Delivery</em>, Addison-Wesley, 2010.</li>
+      <li>Brendan Burns, Joe Beda, Kelsey Hightower and Lachlan Evenson, <em>Kubernetes: Up and Running</em>, 3rd ed., O'Reilly, 2022.</li>
+      <li>Jeff Geerling, <em>Ansible for DevOps</em>, Leanpub.</li>
+      <li>Official documentation: <a href="https://docs.docker.com/">Docker</a>, <a href="https://docs.ansible.com/">Ansible</a>, <a href="https://kubernetes.io/docs/">Kubernetes</a>.</li>
+    </ul>
+
+  </div>
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="https://m-elhamlaoui.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 Mahmoud EL HAMLAOUI. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://m-elhamlaoui.github.io/javascripts/bootstrap.min.js"></script>
+
+<script src="https://m-elhamlaoui.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

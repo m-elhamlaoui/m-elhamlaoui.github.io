@@ -1,0 +1,729 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Software Engineering - Mahmoud EL HAMLAOUI</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Mahmoud EL HAMLAOUI">
+<meta property="og:title" content="Software Engineering">
+
+
+  <link rel="canonical" href="https://m-elhamlaoui.github.io/teaching/se/">
+  <meta property="og:url" content="https://m-elhamlaoui.github.io/teaching/se/">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Mahmoud EL HAMLAOUI",
+      "url" : "https://m-elhamlaoui.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://m-elhamlaoui.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Mahmoud EL HAMLAOUI Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/main.css">
+
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/css/main_add.css">
+
+
+<meta http-equiv="cleartype" content="on">
+
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://m-elhamlaoui.github.io/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://m-elhamlaoui.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://m-elhamlaoui.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://m-elhamlaoui.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://m-elhamlaoui.github.io/">Mahmoud EL HAMLAOUI</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/cv/">Bio</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://m-elhamlaoui.github.io/images/img-meh.jpg" class="author__avatar" alt="Habilitated Associate Professor">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Habilitated Associate Professor</h3>
+    <p class="author__bio">Geek and Basketball player</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><a href="https://goo.gl/maps/BN4VVrcDbSeuk6kKA" target="_blank"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> ENSIAS</a></li>
+      
+      
+      
+      
+        <li><a href="mailto:mahmoud.elhamlaoui@ensias.um5.ac.ma"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+      
+        <li><a href="https://dblp.org/pers/h/Hamlaoui:Mahmoud_El.html"><i class="fa fa-fw fa-book" aria-hidden="true"></i> DBLP</a></li>
+     
+       
+        <li><a href="https://www.researchgate.net/profile/Mahmoud_El_Hamlaoui"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=sZe9-D4AAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+        <li><a href="https://twitter.com/elhamlaoui"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/mahmoud-el-hamlaoui"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <div class="archive se-course">
+    <style>
+      .se-course h2 { margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: .2em; }
+      .se-course h3 { margin-top: 1.4em; font-size: 1.05em; }
+      .se-course pre { font-size: .72em; line-height: 1.4; overflow-x: auto; background: #f7f7f7; border: 1px solid #e5e5e5; padding: .8em; }
+      .se-course code { font-size: .9em; }
+      .se-course table { font-size: .8em; width: auto; }
+      .se-course .lab-list li { margin: .15em 0; }
+      .se-course .note { font-size: .85em; background: #f5f5f5; border-left: 4px solid #999; padding: .6em 1em; }
+      .se-course .quote { font-style: italic; color: #555; }
+      .se-course .takeaway { font-size: .9em; background: #f4f8fb; border-left: 4px solid #4a7fb0; padding: .5em 1em; }
+      .se-course figure { margin: 1.2em auto; text-align: center; }
+      .se-course figure img { max-width: 100%; height: auto; }
+      .se-course figcaption { font-size: .78em; color: #666; margin-top: .4em; }
+      .se-course figcaption .credit { display: block; font-size: .9em; color: #999; }
+      .se-course .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1em; align-items: end; }
+      .se-course .figs figure { margin: 0; }
+      .se-course .reading li { margin-bottom: .4em; font-size: .9em; }
+      .se-course h4 { margin: 0 0 .5em; font-size: 1em; }
+      .se-course h4 span { display: block; font-weight: normal; font-size: .8em; color: #777; }
+      .se-course .catalog { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1em; margin: 1em 0; }
+      .se-course .family { border: 1px solid #e3e3e3; border-top: 4px solid #4a7fb0; border-radius: 4px; padding: .8em 1em; font-size: .85em; }
+      .se-course .family ul { margin: 0; padding-left: 1.1em; }
+      .se-course .family li { margin-bottom: .3em; }
+      .se-course .family p { margin: 0; }
+      .se-course .creational { border-top-color: #4a7fb0; }
+      .se-course .structural { border-top-color: #5a9e6f; }
+      .se-course .behavioral { border-top-color: #c0773a; }
+      .se-course .smells .family { border-top-color: #b55; }
+      .se-course dl.anatomy dt { font-weight: bold; margin-top: .8em; color: #4a7fb0; }
+      .se-course dl.anatomy dd { margin-left: 0; font-size: .92em; }
+      .se-course .beforeafter { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1em; }
+    </style>
+
+    <h1 class="page__title">Software Engineering</h1>
+
+    <p class="quote">&ldquo;Walking on water and developing software from a specification are easy if both are
+    frozen.&rdquo; &mdash; Edward V. Berard</p>
+
+    <p>Software engineering is the systematic application of engineering approaches to the development of software:
+    methods, techniques and tools for its specification, design, implementation, testing and maintenance. This course
+    gives a broad view of the discipline, from requirements and life cycle models to agile methods,
+    modeling with UML, design patterns and refactoring. Each part combines lectures, in-class exercises and hands-on work, and students
+    carry out two projects during the semester.</p>
+
+    <ul class="lab-list">
+      <li><a href="#part1">Part 1 &ndash; Foundations: product, people and process</a></li>
+      <li><a href="#part2">Part 2 &ndash; Requirements engineering</a></li>
+      <li><a href="#part3">Part 3 &ndash; Software life cycle models</a></li>
+      <li><a href="#part4">Part 4 &ndash; Agile methods: Scrum, XP and TDD</a></li>
+      <li><a href="#part5">Part 5 &ndash; Modeling with UML</a></li>
+      <li><a href="#part6">Part 6 &ndash; Design patterns</a></li>
+      <li><a href="#part7">Part 7 &ndash; Refactoring</a></li>
+      <li><a href="#reading">Further reading</a></li>
+    </ul>
+
+    <p class="note">This page gives an overview of the course. The slides, exercises and project statements are
+    provided to students during the course.</p>
+
+<!-- ================================================================== -->
+    <h2 id="part1">Part 1 &ndash; Foundations: product, people and process</h2>
+    <p>Software development is organized around three <strong>Ps</strong>:</p>
+    <ul>
+      <li><strong>Product</strong> &ndash; the result of the project, whose quality is described by the
+      <strong>ISO/IEC 25010 (SQuaRE)</strong> model: functional suitability, performance efficiency, compatibility,
+      usability, reliability, security, maintainability and portability.</li>
+      <li><strong>People</strong> &ndash; the project owner (<em>ma&icirc;trise d'ouvrage</em>, MOA), who defines the
+      needs and pays for the result, and the project contractor (<em>ma&icirc;trise d'&oelig;uvre</em>, MOE), who builds it.</li>
+      <li><strong>Process</strong> &ndash; how a project goes from the beginning to the end, through a life cycle and
+      under the constraints of the project management triangle.</li>
+    </ul>
+
+    <div class="figs">
+      <figure>
+        <img src="images/triangle.svg" alt="Project management triangle" style="width: 260px;">
+        <figcaption>The project management triangle: scope, time and cost constrain quality.
+        <span class="credit">Mapto, <a href="https://commons.wikimedia.org/wiki/File:Project-triangle-en.svg">Wikimedia Commons</a>, public domain</span></figcaption>
+      </figure>
+      <div>
+        <h3>Why it matters: famous software failures</h3>
+        <ul>
+          <li><strong>Mariner 1 (1962):</strong> a missing hyphen in the guidance code sent wrong signals to the spacecraft, which had to be destroyed.</li>
+          <li><strong>Morris worm (1988):</strong> one of the first Internet worms, with damage estimated at up to $10 million.</li>
+          <li><strong>Patriot missile (1991):</strong> an accumulated clock rounding error prevented the interception of a Scud missile at Dhahran.</li>
+          <li><strong>EDS Child Support System (2004):</strong> &ldquo;badly designed, badly tested and badly implemented&rdquo;, with more than 1,000 reported problems.</li>
+          <li><strong>Mt. Gox (2011):</strong> a programming error created transactions that could never be redeemed, losing 2,609 bitcoins.</li>
+        </ul>
+      </div>
+    </div>
+    <p>Exercise: identify the major causes of software failure in these cases (unclear requirements, insufficient
+    testing, poor communication between stakeholders, unrealistic planning&hellip;).</p>
+
+<!-- ================================================================== -->
+    <h2 id="part2">Part 2 &ndash; Requirements engineering</h2>
+    <p>Requirements specify <strong>what</strong> to build, not <strong>how</strong>. They range from high-level
+    abstract statements (user requirements) to detailed specifications (system requirements), and they are read by
+    very different people: clients, managers, developers and testers.</p>
+    <ul>
+      <li><strong>Functional requirements</strong> describe the services the system provides and how it reacts to
+      inputs; imprecise wording is a major source of conflict.</li>
+      <li><strong>Non-functional requirements</strong> constrain the system as a whole (performance, reliability,
+      security, usability) and must be measurable: response time, availability, mean time to failure, etc.</li>
+    </ul>
+
+    <h3>The requirements engineering process</h3>
+    <ol>
+      <li><strong>Elicitation and analysis:</strong> interviews, observation, workshops, scenarios and use cases;
+      stakeholders often don't know what they really want, use their own vocabulary and change their minds.</li>
+      <li><strong>Specification:</strong> natural language, structured templates and tables, or graphical notations:
+      SysML requirement diagrams, <strong>Data Flow Diagrams</strong> (context diagram and top-down decomposition)
+      and <strong>SADT</strong>.</li>
+      <li><strong>Validation:</strong> check validity, consistency, completeness, realism and verifiability, through
+      reviews, prototyping and test-case generation.</li>
+    </ol>
+    <p>Exercises: draw the DFD of a lemonade stand and of an ATM, an SADT diagram of an ATM, and a SysML requirement
+    diagram. The course also introduces <strong>project selection</strong> criteria used before a project starts:
+    payback period, net present value and profitability index.</p>
+    <p class="takeaway"><strong>Takeaway:</strong> requirements engineering is difficult because it involves many
+    stakeholders with conflicting needs, and because requirements keep changing.</p>
+
+<!-- ================================================================== -->
+    <h2 id="part3">Part 3 &ndash; Software life cycle models</h2>
+    <p>The Software Development Life Cycle (SDLC) goes through planning and analysis, requirements, design,
+    development, testing, deployment and maintenance. Life cycle models organize these phases differently.</p>
+    <div class="figs">
+      <figure>
+        <img src="images/waterfall.svg" alt="Waterfall model">
+        <figcaption><strong>Waterfall:</strong> a predictive, document-driven model, each phase ending with a deliverable.
+        <span class="credit">Peter Kemp / Paul Smith, <a href="https://commons.wikimedia.org/wiki/File:Waterfall_model.svg">Wikimedia Commons</a>, CC BY 3.0</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/v_model.svg" alt="V-model">
+        <figcaption><strong>V-model:</strong> each design level is paired with a verification level, tests are defined early.
+        <span class="credit">FHWA, redrawn by Slashme, <a href="https://commons.wikimedia.org/wiki/File:Systems_Engineering_Process_II.svg">Wikimedia Commons</a>, public domain</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/spiral.svg" alt="Spiral model">
+        <figcaption><strong>Spiral (Boehm, 1988):</strong> iterations driven by risk analysis and prototyping.
+        <span class="credit">Conny, Marctroy, <a href="https://commons.wikimedia.org/wiki/File:Spiral_model_(Boehm,_1988).svg">Wikimedia Commons</a>, public domain</span></figcaption>
+      </figure>
+    </div>
+    <p>Predictive models work well when requirements are known and stable. The <strong>incremental</strong> model
+    (Parnas) delivers a minimal functional subset first, then adds features; iterative models accept that
+    requirements evolve during the project. The <em>Marshmallow Challenge</em>, played in class, shows why building and
+    testing early beats planning everything up front.</p>
+
+<!-- ================================================================== -->
+    <h2 id="part4">Part 4 &ndash; Agile methods: Scrum, XP and TDD</h2>
+    <p>Agile is first a mindset. The <strong>Agile Manifesto</strong> values individuals and interactions over
+    processes and tools, working software over comprehensive documentation, customer collaboration over contract
+    negotiation, and responding to change over following a plan.</p>
+
+    <h3>Scrum</h3>
+    <figure>
+      <img src="images/scrum.png" alt="Scrum framework" style="width: 620px;">
+      <figcaption>The Scrum framework: product backlog, sprint planning, sprint backlog, daily scrum, sprint review and retrospective.
+      <span class="credit">Dr Ian Mitchell, <a href="https://commons.wikimedia.org/wiki/File:Scrum_Framework.png">Wikimedia Commons</a>, CC BY-SA 4.0</span></figcaption>
+    </figure>
+    <ul>
+      <li><strong>Empirical process control</strong> based on transparency, inspection and adaptation; sprints of 2 to 4 weeks.</li>
+      <li><strong>Roles:</strong> Product Owner, Scrum Master and Developers.</li>
+      <li><strong>Ceremonies:</strong> sprint planning, daily scrum, sprint review and sprint retrospective (start / stop / continue).</li>
+      <li><strong>Artifacts:</strong> product backlog, sprint backlog, increment, and the burndown chart.</li>
+    </ul>
+
+    <h3>User stories</h3>
+    <p>A user story follows the template <em>&ldquo;As a [persona], I want [to perform this action] so that [I get this
+    value]&rdquo;</em>. Good stories satisfy the INVEST criteria and the 13 criteria of the Quality User Story framework.
+    Large stories are split by workflow steps, business rule variations, data entry methods or deferred performance.
+    Stories are estimated in story points with <strong>Planning Poker</strong>, and the project duration is derived from
+    the team's <strong>velocity</strong>.</p>
+    <div class="figs">
+      <figure>
+        <img src="images/burndown.svg" alt="Burndown chart">
+        <figcaption>A burndown chart shows the remaining work against the ideal trend.
+        <span class="credit">PabloStraub, <a href="https://commons.wikimedia.org/wiki/File:SampleBurndownChart.svg">Wikimedia Commons</a>, CC0</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/tdd.png" alt="Test-driven development cycle">
+        <figcaption>Test-Driven Development: write a failing test, make it pass, refactor.
+        <span class="credit">Xarawn, <a href="https://commons.wikimedia.org/wiki/File:TDD_Global_Lifecycle.png">Wikimedia Commons</a>, CC BY-SA 4.0</span></figcaption>
+      </figure>
+    </div>
+    <p>The course also presents the engineering practices of <strong>eXtreme Programming</strong> (pair programming,
+    continuous integration, refactoring, small releases) and <strong>Test-Driven Development</strong>. Students practise
+    with an online Scrum board.</p>
+
+<!-- ================================================================== -->
+    <h2 id="part5">Part 5 &ndash; Modeling with UML</h2>
+    <p>Before UML, more than a hundred object-oriented methods and notations coexisted. The <strong>Unified Modeling
+    Language</strong> provides a standard, method-independent notation with several levels of abstraction, to get an
+    overall view of a system and to communicate about it.</p>
+    <div class="figs">
+      <figure>
+        <img src="images/uml.svg" alt="UML diagram types">
+        <figcaption>The UML diagram types: structure and behaviour diagrams.
+        <span class="credit">Derfel73, Pmerson, <a href="https://commons.wikimedia.org/wiki/File:UML_diagrams_overview.svg">Wikimedia Commons</a>, public domain</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/use_case.svg" alt="Use case diagram of a restaurant">
+        <figcaption>A use case diagram: actors outside the system and the functionalities they trigger.
+        <span class="credit">Kishorekumar 62, redrawn by Mdd, <a href="https://commons.wikimedia.org/wiki/File:Use_case_restaurant_model.svg">Wikimedia Commons</a>, CC BY-SA 3.0</span></figcaption>
+      </figure>
+    </div>
+    <ul>
+      <li><strong>Use case diagrams:</strong> actors, use cases, <code>include</code>, <code>extend</code> and generalization;
+      textual description of a use case (for instance &ldquo;withdraw cash&rdquo;), refined over several iterations.</li>
+      <li><strong>System sequence diagrams</strong> and <strong>sequence diagrams:</strong> lifelines, message types,
+      interaction frames (<code>alt</code>, <code>opt</code>, <code>loop</code>), from an algorithm to a diagram, and
+      centralized vs. distributed design.</li>
+      <li><strong>Activity diagrams:</strong> actions, decisions, forks and joins, swimlanes &ndash; exercised on a
+      training process, a job posting process and&hellip; a chocolate mousse recipe.</li>
+    </ul>
+
+<!-- ================================================================== -->
+    <h2 id="part6">Part 6 &ndash; Design patterns</h2>
+    <p>A design pattern is a proven, reusable solution to a recurring design problem in a given context. It is not a
+    piece of code to copy, but a general concept &mdash; a blueprint &mdash; that each developer adapts to their own
+    program. The classic catalog was published in 1994 by the &ldquo;Gang of Four&rdquo; (Gamma, Helm, Johnson and
+    Vlissides), inspired by the patterns of the architect Christopher Alexander.</p>
+
+    <h3>Why learn patterns?</h3>
+    <ul>
+      <li><strong>A toolkit</strong> of tried and tested solutions to common problems of object-oriented design.</li>
+      <li><strong>A shared vocabulary:</strong> saying &ldquo;let's use an Observer here&rdquo; is enough for the whole team.</li>
+      <li><strong>Good design principles</strong> made concrete: program to an interface, not an implementation;
+      favor composition over inheritance; encapsulate what varies; the SOLID principles.</li>
+      <li><strong>A critical eye:</strong> patterns are sometimes used where a simpler solution would do, or only work
+      around the limits of a language. A pattern solves a problem in a context; without the problem, it only adds complexity.</li>
+    </ul>
+
+    <h3>The catalog</h3>
+    <p>The 22 classic patterns are grouped by intent.</p>
+    <div class="catalog">
+      <div class="family creational">
+        <h4>Creational <span>how objects are created</span></h4>
+        <ul>
+          <li><strong>Factory Method</strong> &ndash; let subclasses decide which class to instantiate.</li>
+          <li><strong>Abstract Factory</strong> &ndash; create families of related objects without naming their classes.</li>
+          <li><strong>Builder</strong> &ndash; build a complex object step by step.</li>
+          <li><strong>Prototype</strong> &ndash; create new objects by cloning an existing one.</li>
+          <li><strong>Singleton</strong> &ndash; ensure a class has a single instance with a global access point.</li>
+        </ul>
+      </div>
+      <div class="family structural">
+        <h4>Structural <span>how objects are assembled</span></h4>
+        <ul>
+          <li><strong>Adapter</strong> &ndash; make incompatible interfaces work together.</li>
+          <li><strong>Bridge</strong> &ndash; separate an abstraction from its implementation so both can vary.</li>
+          <li><strong>Composite</strong> &ndash; treat a tree of objects and a single object uniformly.</li>
+          <li><strong>Decorator</strong> &ndash; add responsibilities to an object dynamically by wrapping it.</li>
+          <li><strong>Facade</strong> &ndash; offer a simple interface to a complex subsystem.</li>
+          <li><strong>Flyweight</strong> &ndash; share common state between many fine-grained objects.</li>
+          <li><strong>Proxy</strong> &ndash; control access to an object through a substitute.</li>
+        </ul>
+      </div>
+      <div class="family behavioral">
+        <h4>Behavioral <span>how objects interact</span></h4>
+        <ul>
+          <li><strong>Chain of Responsibility</strong> &ndash; pass a request along a chain of handlers.</li>
+          <li><strong>Command</strong> &ndash; turn a request into an object (undo, queues, logs).</li>
+          <li><strong>Iterator</strong> &ndash; traverse a collection without exposing its structure.</li>
+          <li><strong>Mediator</strong> &ndash; centralize the communication between objects.</li>
+          <li><strong>Memento</strong> &ndash; save and restore the state of an object.</li>
+          <li><strong>Observer</strong> &ndash; notify subscribers automatically when an object changes.</li>
+          <li><strong>State</strong> &ndash; change the behavior of an object when its state changes.</li>
+          <li><strong>Strategy</strong> &ndash; make a family of algorithms interchangeable.</li>
+          <li><strong>Template Method</strong> &ndash; define the skeleton of an algorithm, let subclasses fill in steps.</li>
+          <li><strong>Visitor</strong> &ndash; add operations to a structure without changing its classes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Anatomy of a pattern: Strategy</h3>
+    <p>Each pattern is studied with the same template. Here is the Strategy pattern.</p>
+    <dl class="anatomy">
+      <dt>Intent</dt>
+      <dd>Define a family of algorithms, put each one in its own class, and make them interchangeable at run time.</dd>
+      <dt>Problem</dt>
+      <dd>An online shop supports card payment. Then PayPal, then bank transfer, then vouchers&hellip; Each new method
+      adds a branch to a growing <code>if/else</code> in the checkout code, which becomes fragile and hard to test.</dd>
+      <dt>Solution</dt>
+      <dd>Extract each payment method into a class implementing a common <code>PaymentStrategy</code> interface. The cart
+      keeps a reference to a strategy and delegates the payment to it, without knowing which one it is.</dd>
+      <dt>Structure</dt>
+      <dd>
+        <figure>
+          <svg viewBox="0 0 600 220" width="600" role="img" aria-label="Class diagram of the Strategy pattern">
+            <style>
+              .k { fill: #f4f8fb; stroke: #4a7fb0; stroke-width: 1.5; }
+              .n { font: bold 13px Georgia, serif; fill: #222; text-anchor: middle; }
+              .i { font: italic 12px Georgia, serif; fill: #555; text-anchor: middle; }
+              .m { font: 12px Consolas, monospace; fill: #333; }
+              .l { stroke: #555; stroke-width: 1.5; fill: none; }
+              .d { stroke: #555; stroke-width: 1.5; fill: none; stroke-dasharray: 5 3; }
+            </style>
+            <defs>
+              <marker id="tri" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#fff" stroke="#555"/></marker>
+              <marker id="fl2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#555"/></marker>
+            </defs>
+            <rect class="k" x="20" y="20" width="170" height="30"/><text class="n" x="105" y="40">ShoppingCart</text>
+            <rect class="k" x="20" y="50" width="170" height="40"/><text class="m" x="30" y="75">checkout(amount)</text>
+            <rect class="k" x="350" y="10" width="200" height="40"/><text class="i" x="450" y="27">&#171;interface&#187;</text><text class="n" x="450" y="43">PaymentStrategy</text>
+            <rect class="k" x="350" y="50" width="200" height="30"/><text class="m" x="360" y="70">pay(amount)</text>
+            <path class="l" d="M190,50 L350,45" marker-end="url(#fl2)"/>
+            <text class="m" x="225" y="40">strategy</text>
+            <rect class="k" x="270" y="150" width="140" height="30"/><text class="n" x="340" y="170">CardPayment</text>
+            <rect class="k" x="440" y="150" width="140" height="30"/><text class="n" x="510" y="170">PayPalPayment</text>
+            <path class="d" d="M340,150 L340,115 L450,115 L450,82" marker-end="url(#tri)"/>
+            <path class="d" d="M510,150 L510,115 L450,115"/>
+          </svg>
+          <figcaption>Class diagram of the Strategy pattern: the cart depends on the interface, not on a concrete payment method.</figcaption>
+        </figure>
+      </dd>
+      <dt>Code</dt>
+      <dd>
+<pre><code>interface PaymentStrategy { void pay(double amount); }
+
+class CardPayment implements PaymentStrategy {
+    public void pay(double amount) { /* charge the card */ }
+}
+
+class ShoppingCart {
+    private PaymentStrategy strategy;
+    void setStrategy(PaymentStrategy s) { this.strategy = s; }
+    void checkout(double amount) { strategy.pay(amount); }   // no if/else on the payment type
+}</code></pre>
+      </dd>
+      <dt>Applicability</dt>
+      <dd>Use it when several variants of an algorithm exist, when a class is polluted by conditionals that select a
+      behavior, or when the algorithm must be changed at run time.</dd>
+      <dt>Pros and cons</dt>
+      <dd>&#10004; New strategies without changing the client (open/closed principle); algorithms isolated and testable.
+      <br>&#10008; More classes; the client must know the differences between strategies; overkill when there are only two
+      stable variants.</dd>
+      <dt>Related patterns</dt>
+      <dd>State has the same structure, but the states know each other and trigger transitions; Template Method varies
+      parts of an algorithm through inheritance, Strategy through composition.</dd>
+    </dl>
+    <p>Exercises: recognize the pattern behind a design problem, draw its UML class diagram, and implement it in Java.</p>
+
+<!-- ================================================================== -->
+    <h2 id="part7">Part 7 &ndash; Refactoring</h2>
+    <p><strong>Refactoring</strong> is a disciplined way of improving the internal structure of code
+    <em>without changing its external behavior</em>. It turns &ldquo;dirty&rdquo; code into <strong>clean
+    code</strong>: code that is easy to read and understand, without duplication, with a small number of classes and
+    methods, that passes all its tests and is cheaper to maintain.</p>
+
+    <h3>Technical debt</h3>
+    <p>Dirty code is rarely written on purpose. It accumulates through tight deadlines, lack of tests, lack of
+    experience, missing documentation or poor communication. Like a financial debt, every shortcut has to be paid back
+    later, with interest: each new feature takes longer to add. Refactoring is the way to pay this debt back.</p>
+
+    <h3>When and how to refactor</h3>
+    <ul>
+      <li><strong>When:</strong> the third time you do something similar (rule of three), before adding a feature,
+      when fixing a bug, and during code reviews.</li>
+      <li><strong>How:</strong> in a series of small steps, each leaving the program working; run the tests after each
+      step; never mix refactoring with the addition of new features.</li>
+    </ul>
+
+    <h3>Code smells</h3>
+    <p>A code smell is a surface symptom that usually points to a deeper design problem.</p>
+    <div class="catalog smells">
+      <div class="family"><h4>Bloaters</h4><p>Long Method, Large Class, Primitive Obsession, Long Parameter List, Data Clumps</p></div>
+      <div class="family"><h4>Object-orientation abusers</h4><p>Switch Statements, Temporary Field, Refused Bequest, Alternative Classes with Different Interfaces</p></div>
+      <div class="family"><h4>Change preventers</h4><p>Divergent Change, Shotgun Surgery, Parallel Inheritance Hierarchies</p></div>
+      <div class="family"><h4>Dispensables</h4><p>Comments, Duplicate Code, Lazy Class, Data Class, Dead Code, Speculative Generality</p></div>
+      <div class="family"><h4>Couplers</h4><p>Feature Envy, Inappropriate Intimacy, Message Chains, Middle Man, Incomplete Library Class</p></div>
+    </div>
+
+    <h3>Refactoring techniques</h3>
+    <table>
+      <thead><tr><th>Group</th><th>Goal</th><th>Examples</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Composing methods</strong></td><td>shorten methods, remove duplication</td><td>Extract Method, Inline Method, Extract Variable, Replace Temp with Query</td></tr>
+        <tr><td><strong>Moving features between objects</strong></td><td>put responsibilities in the right class</td><td>Move Method, Move Field, Extract Class, Hide Delegate</td></tr>
+        <tr><td><strong>Organizing data</strong></td><td>richer, encapsulated data</td><td>Encapsulate Field, Replace Magic Number with Symbolic Constant, Replace Type Code with State/Strategy</td></tr>
+        <tr><td><strong>Simplifying conditional expressions</strong></td><td>tame complex conditionals</td><td>Decompose Conditional, Replace Nested Conditional with Guard Clauses, Replace Conditional with Polymorphism, Introduce Null Object</td></tr>
+        <tr><td><strong>Simplifying method calls</strong></td><td>clearer interfaces</td><td>Rename Method, Introduce Parameter Object, Replace Error Code with Exception</td></tr>
+        <tr><td><strong>Dealing with generalization</strong></td><td>move behavior along the hierarchy</td><td>Pull Up Method, Extract Interface, Form Template Method, Replace Inheritance with Delegation</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Example: Replace Conditional with Polymorphism</h3>
+    <p>The <em>Switch Statements</em> smell below disappears when each case becomes a class &mdash; which leads
+    naturally to the Strategy pattern of Part 6.</p>
+    <div class="beforeafter">
+<pre><code>// Before
+double pay(String type, double amount) {
+    if (type.equals("CARD"))
+        return amount * 1.02;      // card fee
+    else if (type.equals("PAYPAL"))
+        return amount * 1.034;     // PayPal fee
+    else if (type.equals("TRANSFER"))
+        return amount;
+    throw new IllegalArgumentException(type);
+}</code></pre>
+<pre><code>// After
+interface PaymentStrategy {
+    double pay(double amount);
+}
+class CardPayment implements PaymentStrategy {
+    public double pay(double amount) { return amount * 1.02; }
+}
+class PayPalPayment implements PaymentStrategy {
+    public double pay(double amount) { return amount * 1.034; }
+}
+// a new payment method = a new class, no change elsewhere</code></pre>
+    </div>
+    <p class="takeaway"><strong>Takeaway:</strong> patterns are often the destination of a refactoring, not a starting
+    point: write simple code first, and refactor towards a pattern when the code asks for it.</p>
+
+<!-- ================================================================== -->
+    <h2 id="reading">Further reading</h2>
+    <ul class="reading">
+      <li>Ian Sommerville, <em>Software Engineering</em>, 10th ed., Pearson, 2016.</li>
+      <li>Roger S. Pressman and Bruce R. Maxim, <em>Software Engineering: A Practitioner's Approach</em>, McGraw-Hill.</li>
+      <li>Ken Schwaber and Jeff Sutherland, <a href="https://scrumguides.org/"><em>The Scrum Guide</em></a>.</li>
+      <li>Mike Cohn, <em>User Stories Applied: For Agile Software Development</em>, Addison-Wesley, 2004.</li>
+      <li>Craig Larman, <em>Applying UML and Patterns</em>, 3rd ed., Prentice Hall, 2004.</li>
+      <li>Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides, <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>, Addison-Wesley, 1994.</li>
+      <li>Eric Freeman and Elisabeth Robson, <em>Head First Design Patterns</em>, 2nd ed., O'Reilly, 2020.</li>
+      <li>Martin Fowler, <em>Refactoring: Improving the Design of Existing Code</em>, 2nd ed., Addison-Wesley, 2018.</li>
+      <li>Robert C. Martin, <em>Clean Code: A Handbook of Agile Software Craftsmanship</em>, Prentice Hall, 2008.</li>
+      <li>Alexander Shvets, <a href="https://refactoring.guru/">Refactoring.Guru</a> &ndash; illustrated catalogs of design patterns and refactorings.</li>
+    </ul>
+
+  </div>
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="https://m-elhamlaoui.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 Mahmoud EL HAMLAOUI. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://m-elhamlaoui.github.io/javascripts/bootstrap.min.js"></script>
+
+<script src="https://m-elhamlaoui.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

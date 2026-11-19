@@ -1,0 +1,1188 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Model-Driven Engineering - Mahmoud EL HAMLAOUI</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Mahmoud EL HAMLAOUI">
+<meta property="og:title" content="Model-Driven Engineering">
+
+
+  <link rel="canonical" href="https://m-elhamlaoui.github.io/teaching/mde/">
+  <meta property="og:url" content="https://m-elhamlaoui.github.io/teaching/mde/">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Mahmoud EL HAMLAOUI",
+      "url" : "https://m-elhamlaoui.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="https://m-elhamlaoui.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Mahmoud EL HAMLAOUI Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/main.css">
+
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/css/main_add.css">
+
+
+<meta http-equiv="cleartype" content="on">
+
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="https://m-elhamlaoui.github.io/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="https://m-elhamlaoui.github.io/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="https://m-elhamlaoui.github.io/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="https://m-elhamlaoui.github.io/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://m-elhamlaoui.github.io/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="https://m-elhamlaoui.github.io/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://m-elhamlaoui.github.io/assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://m-elhamlaoui.github.io/">Mahmoud EL HAMLAOUI</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/teaching/">Teaching</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="https://m-elhamlaoui.github.io/cv/">Bio</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="https://m-elhamlaoui.github.io/images/img-meh.jpg" class="author__avatar" alt="Habilitated Associate Professor">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Habilitated Associate Professor</h3>
+    <p class="author__bio">Geek and Basketball player</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li><a href="https://goo.gl/maps/BN4VVrcDbSeuk6kKA" target="_blank"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> ENSIAS</a></li>
+      
+      
+      
+      
+        <li><a href="mailto:mahmoud.elhamlaoui@ensias.um5.ac.ma"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+      
+      
+      
+        <li><a href="https://dblp.org/pers/h/Hamlaoui:Mahmoud_El.html"><i class="fa fa-fw fa-book" aria-hidden="true"></i> DBLP</a></li>
+     
+       
+        <li><a href="https://www.researchgate.net/profile/Mahmoud_El_Hamlaoui"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+      
+      
+        <li><a href="https://scholar.google.com/citations?user=sZe9-D4AAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+      
+      
+        <li><a href="https://twitter.com/elhamlaoui"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+      
+      
+      
+      
+        <li><a href="https://www.linkedin.com/in/mahmoud-el-hamlaoui"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <div class="archive mde-course">
+    <style>
+      .mde-course h2 { margin-top: 2.2em; border-bottom: 1px solid #ddd; padding-bottom: .2em; }
+      .mde-course h3 { margin-top: 1.6em; }
+      .mde-course figure { margin: 1.2em auto; text-align: center; }
+      .mde-course figure img { max-width: 100%; border: 1px solid #e5e5e5; }
+      .mde-course figcaption { font-size: .8em; color: #666; margin-top: .4em; }
+      .mde-course pre { font-size: .72em; line-height: 1.4; overflow-x: auto; background: #f7f7f7; border: 1px solid #e5e5e5; padding: .8em; }
+      .mde-course code { font-size: .9em; }
+      .mde-course table { font-size: .8em; width: 100%; }
+      .mde-course details { margin: 1.2em 0; border: 1px solid #cfe0cf; border-radius: 4px; padding: .5em 1em; background: #f6fbf6; }
+      .mde-course summary { cursor: pointer; font-weight: bold; color: #2e6b2e; }
+      .mde-course .note { font-size: .85em; background: #f5f5f5; border-left: 4px solid #999; padding: .6em 1em; }
+      .mde-course .lab-list li { margin: .15em 0; }
+      .mde-course figure { margin: 1.2em auto; text-align: center; }
+      .mde-course figure img, .mde-course figure svg { max-width: 100%; height: auto; }
+      .mde-course figcaption { font-size: .78em; color: #666; margin-top: .4em; }
+      .mde-course figcaption .credit { display: block; font-size: .9em; color: #999; }
+      .mde-course .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1em; align-items: end; }
+      .mde-course .figs figure { margin: 0; }
+      .mde-course .reading li { margin-bottom: .4em; font-size: .9em; }
+    </style>
+
+    <h1 class="page__title">Model-Driven Engineering</h1>
+
+    <p>Model-Driven Engineering (MDE) puts models at the heart of software development: models are no longer
+    mere documentation, but first-class artifacts that are defined, checked, transformed and executed.
+    These three hands-on labs follow the main steps of building a modeling language with the Eclipse Modeling
+    ecosystem: defining its abstract syntax (metamodel), giving it a textual and a graphical concrete syntax,
+    and manipulating models programmatically.</p>
+
+    <h2 id="concepts">Key concepts</h2>
+    <p>In MDE, every model <em>conforms to</em> a metamodel, which defines the concepts of a language and the
+    relationships between them. The metamodel itself conforms to a meta-metamodel (MOF in the OMG standards, Ecore in
+    the Eclipse world), which is defined in terms of itself. This four-layer architecture is what makes it possible to
+    build generic tools &mdash; editors, validators, code generators &mdash; that work for any modeling language.</p>
+    <div class="figs">
+      <figure>
+        <img src="images/m0_m3.png" alt="The four metamodeling layers M0 to M3">
+        <figcaption>The four metamodeling layers: data (M0), model (M1), metamodel (M2) and meta-metamodel (M3); labels partly in German.
+        <span class="credit">Gubaer, <a href="https://commons.wikimedia.org/wiki/File:M0-m3.png">Wikimedia Commons</a>, public domain</span></figcaption>
+      </figure>
+      <figure>
+        <img src="images/transformation.png" alt="Principle of a model transformation">
+        <figcaption>A model transformation is defined between a source and a target metamodel, then applied to models
+        (labels in French).
+        <span class="credit">Eneelk, <a href="https://commons.wikimedia.org/wiki/File:Principe_d%27une_transformation_de_mod%C3%A8le.png">Wikimedia Commons</a>, CC BY-SA 4.0</span></figcaption>
+      </figure>
+    </div>
+    <p>A modeling language has an <strong>abstract syntax</strong> (its metamodel) and one or more <strong>concrete
+    syntaxes</strong> (textual, with Xtext, or graphical, with Sirius). Models can then be <strong>manipulated</strong>
+    by programs, <strong>transformed</strong> into other models, or used to <strong>generate</strong> code. The three
+    labs follow exactly these steps.</p>
+
+    <ul class="lab-list">
+      <li><a href="#lab1">Lab 1 &ndash; Metamodeling with Eclipse EMF</a></li>
+      <li><a href="#lab2">Lab 2 &ndash; Graphical modeling workbench with Sirius</a></li>
+      <li><a href="#lab3">Lab 3 &ndash; Manipulating models programmatically</a></li>
+      <li><a href="#reading">Further reading</a></li>    </ul>
+
+    <p class="note">Each lab is followed by solution notes, hidden by default: click on
+    <em>&ldquo;Solution notes&rdquo;</em> to display them. Try to solve the lab on your own first.</p>
+
+<!-- ================================================================== -->
+    <h2 id="lab1">Lab 1 &ndash; Metamodeling with Eclipse EMF</h2>
+
+    <h3>Context</h3>
+    <p>The goal of this lab is to illustrate Model-Driven Engineering techniques. We want to handle relational
+    database models in different technological spaces. First, we build a DSL corresponding to a relational DBMS:
+    it must allow creating SQL models without using a tool such as MySQL or Oracle.</p>
+    <p>Then, for NoSQL users, a transformation of the SQL model into an XML model is needed in order to use tools
+    such as BaseX. This transformation goes through a pivot model conforming to the KM3 metamodel (proposed by
+    INRIA): a model-to-model (M2M) transformation SQL &rarr; KM3, then a transformation KM3 &rarr; XML. Finally,
+    for knowledge-base users, an SQL &rarr; OWL transformation is needed; the resulting ontology can be used by a
+    tool such as Prot&eacute;g&eacute;.</p>
+    <p>The first exercises aim at getting started with the metamodeling tools of <em>Eclipse Modeling Tools</em>,
+    mainly those of EMF (<em>Eclipse Modeling Framework</em>).</p>
+
+    <h3>Exercise 1 &ndash; Setup</h3>
+    <p>Create an EMF project: <em>File &gt; New &gt; Other &gt; Eclipse Modeling Framework &gt; Empty EMF Project</em>.
+    Name the project, for example <code>IDM</code>, then <em>Finish</em>. The project appears in the project explorer.</p>
+
+    <h3>Exercise 2 &ndash; Creating the SQL metamodel</h3>
+    <p>Select the <code>model</code> folder of the project, then <em>New &gt; Other &gt; Eclipse Modeling Framework &gt;
+    Ecore Model</em>, and name the metamodel <code>SQL</code>. Choose the <em>Ecore</em> perspective. When the file
+    opens, the editor takes the central area; the <em>Properties</em> view, below it, lists and allows editing the
+    properties of the selected element.</p>
+    <p>The Ecore file can be filled in two ways:</p>
+    <ul>
+      <li>with the EMF <strong>tree editor</strong> (<em>Sample Ecore Model Editor</em>, the default editor or through <em>Open With</em>);</li>
+      <li>with the <strong>graphical editor</strong>: select <code>SQL.ecore</code>, then <em>New &gt; Ecore Diagram</em>; check
+      that the options <em>Create from an existing model</em> and <em>Initialize the diagram with existing model objects</em>
+      are selected, then <em>Finish</em>.</li>
+    </ul>
+
+    <h3>Exercise 3 &ndash; Validating an Ecore model</h3>
+    <p>At any time, you can check that the Ecore file contains a model that conforms to the Ecore metamodel.
+    First save the metamodel, then:</p>
+    <ul>
+      <li>from the graphical editor: click the <em>Validate</em> button at the end of the toolbar;</li>
+      <li>from the tree editor: select the root element and choose <em>Validate</em> in the context menu.</li>
+    </ul>
+
+    <h3>Exercise 4 &ndash; Building the metamodel</h3>
+    <p>In the graphical editor, complete the provided <code>SQL.ecore</code> metamodel so that all the concepts
+    appearing in the model of the figure below are supported.</p>
+    <figure>
+      <img src="images/tp1-003.png" alt="SQL model euro2015 in the tree editor" style="width:560px">
+      <figcaption>SQL model <code>euro2015</code> in the tree editor, and properties of a column</figcaption>
+    </figure>
+
+    <h3>Exercise 5 &ndash; Generating the Java code and the tree editor</h3>
+    <p>Once the metamodel is built, we generate the corresponding Java code and a tree editor for entering a
+    model that conforms to the SQL metamodel.</p>
+    <ul>
+      <li>Select <code>SQL.ecore</code>, then <em>New &gt; Other &gt; Eclipse Modeling Framework &gt; EMF Generator Model</em>,
+      <em>Next</em>. Check that the file is named <code>SQL.genmodel</code>, choose <em>Ecore model</em>, then select
+      <code>SQL.ecore</code> (<em>Browse Workspace</em>, <em>Load</em>), <em>Next</em> and <em>Finish</em>.</li>
+      <li><strong>Configure the generation.</strong> The <code>.genmodel</code> holds the generation properties (for instance,
+      whether an attribute can be modified). Here we keep the default configuration.</li>
+      <li><strong>Generate.</strong> On the root of the <code>.genmodel</code>, choose <em>Generate All</em>. The
+      <code>*.edit</code> and <code>*.editor</code> projects appear.</li>
+    </ul>
+
+    <h3>Exercise 6 &ndash; Using the tree editor</h3>
+    <ul>
+      <li><strong>Launch a new Eclipse</strong>: right-click on the project, <em>Run As &gt; Run Configurations&hellip;</em>, select
+      <em>Eclipse Application</em>, create a new configuration, then <em>Run</em>.</li>
+      <li><strong>Create a project</strong> (<em>File &gt; New &gt; Project &gt; General &gt; Project</em>), for example <code>SQLExample</code>.</li>
+      <li><strong>Launch the editor</strong>: <em>New &gt; Other &gt; Example EMF Model Creation Wizards &gt; SQL Model</em>. Keep the
+      suggested name (<code>My.sql</code>), choose the root element (<em>Model Object</em>), then <em>Finish</em>.</li>
+      <li><strong>Enter the model</strong> with <em>New Child</em> in the context menu; the <em>Properties</em> view (Ecore
+      perspective) gives access to the properties.</li>
+      <li><strong>Validate</strong>: <em>Validate</em> checks the selected element and its sub-elements.</li>
+      <li>Save the model, close the second Eclipse and go back to the first one.</li>
+    </ul>
+
+    <h3>Exercise 7 &ndash; Creating the XML metamodel</h3>
+    <p>Proceeding as for SQL, define a metamodel for XML, then create an XML model that conforms to it.</p>
+
+    <h3>Exercise 8 &ndash; Creating the SQL textual editor</h3>
+    <ul>
+      <li>Create an Xtext project: <em>File &gt; New &gt; Other &gt; Xtext Project From Existing Ecore Models</em>, add
+      <code>SQL.genmodel</code>, choose the root of the metamodel as <em>Entry rule</em>, then define the language
+      extension and the project name.</li>
+      <li>Modify the generated grammar to define the concrete syntax.</li>
+      <li>Right-click on the grammar, <em>Run As &gt; Generate Xtext Artifacts</em>.</li>
+      <li>Repeat the steps of exercise 6 to launch the editor and create a model.</li>
+    </ul>
+
+    <details>
+      <summary>Solution notes &ndash; Lab 1</summary>
+
+      <h3>Exercise 4 &ndash; SQL metamodel</h3>
+      <p>The model of the figure shows a database, tables, and three kinds of columns (plain column, integer column,
+      enumerated column) whose properties are: comment, default value, auto-increment (integer columns), primary key,
+      name, nullable, table and type. A possible solution:</p>
+      <table>
+        <thead><tr><th>EClass</th><th>Features</th></tr></thead>
+        <tbody>
+          <tr><td><code>Database</code></td><td><code>name : EString [1]</code>; <code>tables : Table [0..*]</code> (containment)</td></tr>
+          <tr><td><code>Table</code></td><td><code>name : EString [1]</code>; <code>columns : Column [0..*]</code> (containment; opposite: <code>table</code>)</td></tr>
+          <tr><td><code>Column</code></td><td><code>name : EString [1]</code>; <code>type : EString</code>; <code>comment : EString</code>;
+            <code>defaultValue : EString</code>; <code>nullable : EBoolean</code>; <code>isPrimaryKey : EBoolean</code>;
+            <code>table : Table [1]</code> (opposite of <code>columns</code>)</td></tr>
+          <tr><td><code>IntegerColumn</code> &rarr; <code>Column</code></td><td><code>isAutoIncrement : EBoolean</code></td></tr>
+          <tr><td><code>EnumColumn</code> &rarr; <code>Column</code></td><td><code>values : EString [0..*]</code> (allowed literals)</td></tr>
+        </tbody>
+      </table>
+      <p><code>Database</code> is the root element: tables and columns are reached through containment. The
+      <em>Table</em> property displayed for a column is the opposite reference of the <code>columns</code> containment.</p>
+
+      <h3>Exercise 7 &ndash; XML metamodel</h3>
+      <table>
+        <thead><tr><th>EClass</th><th>Features</th></tr></thead>
+        <tbody>
+          <tr><td><code>Document</code></td><td><code>root : Element [1]</code> (containment)</td></tr>
+          <tr><td><code>Node</code> (abstract)</td><td>&ndash;</td></tr>
+          <tr><td><code>Element</code> &rarr; <code>Node</code></td><td><code>name : EString [1]</code>; <code>attributes : Attribute [0..*]</code>
+            (containment); <code>children : Node [0..*]</code> (containment)</td></tr>
+          <tr><td><code>Attribute</code></td><td><code>name : EString [1]</code>; <code>value : EString [1]</code></td></tr>
+          <tr><td><code>Text</code> &rarr; <code>Node</code></td><td><code>value : EString [1]</code></td></tr>
+        </tbody>
+      </table>
+      <p>The abstract class <code>Node</code> lets an element contain both elements and text, in document order.</p>
+
+      <h3>Exercise 8 &ndash; Xtext grammar</h3>
+      <p>A possible grammar for the metamodel of exercise 4:</p>
+<pre><code>grammar ma.ensias.idm.Sql with org.eclipse.xtext.common.Terminals
+import "http://ensias.ma/idm/sql" as sql
+
+Database returns sql::Database:
+    'database' name=ID '{' tables+=Table* '}';
+Table returns sql::Table:
+    'table' name=ID '{' (columns+=Column (',' columns+=Column)*)? '}';
+Column returns sql::Column:
+    IntegerColumn | EnumColumn
+    | name=ID type=ID (isPrimaryKey?='primary')? (nullable?='null')?;
+IntegerColumn returns sql::IntegerColumn:
+    name=ID 'int' (isAutoIncrement?='auto')? (isPrimaryKey?='primary')? (nullable?='null')?;
+EnumColumn returns sql::EnumColumn:
+    name=ID 'enum' '(' values+=STRING (',' values+=STRING)* ')' (nullable?='null')?;</code></pre>
+      <p>Example: <code>table goals { goal_id int auto primary, own_goal enum ("yes", "no") }</code>.</p>
+    </details>
+
+<!-- ================================================================== -->
+    <h2 id="lab2">Lab 2 &ndash; Graphical modeling workbench with Sirius</h2>
+
+    <p class="note">This lab is adapted from the official Eclipse Sirius tutorial (<em>Creating a Domain-Specific
+    Graphical Modeling Workbench with Eclipse Technologies</em>, Obeo &ndash;
+    <a href="https://eclipse.dev/sirius">https://eclipse.dev/sirius</a>).</p>
+
+    <p>We build a graphical modeling workbench to describe the choreography of a Lego Mindstorms robot.</p>
+
+    <h3>Sirius concepts used</h3>
+    <ul>
+      <li><strong>Viewpoint Specification Project</strong>: Eclipse project that defines a Sirius modeling tool; it contains an
+      <code>.odesign</code> file describing the representations and the Java services used.</li>
+      <li><strong>Viewpoint</strong>: set of representations (diagrams, tables, matrices, trees) dedicated to a need.</li>
+      <li><strong>Diagram Description</strong>: describes a graphical representation: displayed elements, style and editing tools.</li>
+      <li><strong>Node</strong>: element displayed as an image or a simple shape; it defines how to find the elements to display
+      and their style (shape, label, color).</li>
+      <li><strong>Relation Based Edge</strong>: edge representing a relation, possibly computed, between two objects.</li>
+      <li><strong>User Colors Palette</strong>: colors specific to the workbench (background, foreground, border).</li>
+      <li><strong>Container</strong>: graphical element that contains other elements (free form, list or compartments).</li>
+      <li><strong>Double-Click</strong>: actions run when an element is double-clicked.</li>
+      <li><strong>Direct Edit Label</strong>: interpretation of a label edited directly on the diagram.</li>
+      <li><strong>Properties Views Description</strong>: editing of properties in the <em>Properties</em> view.</li>
+    </ul>
+
+    <h3>Step 1 &ndash; The metamodel</h3>
+    <p><strong>Goal:</strong> create with Ecore Tools the metamodel of a robot choreography (Ecore file and the
+    corresponding EMF Java code).</p>
+    <ul>
+      <li>Launch Obeo Designer (or Eclipse with Sirius) and choose the <em>Sirius</em> perspective.</li>
+      <li>Create an <em>Ecore Modeling Project</em> named <code>fr.obeo.dsl.tuto.mindstorms</code>, main package <code>mindstorms</code>.</li>
+      <li>Set the package <em>Ns URI</em> to <code>http://www.obeo.fr/dsl/mindstorms/1.0.0</code>.</li>
+      <li>Using the palette, create the classes, attributes and references of the figure below.</li>
+      <li>Generate the Java code from <code>mindstorms.genmodel</code>.</li>
+      <li>Test the metamodel in a new Eclipse: create a <em>Modeling Project</em>, then a <code>sample.mindstorms</code> model
+      with the wizard generated by EMF (<em>Example EMF Model Creation Wizards</em>, <em>Model Object</em> =
+      <code>Choregraphy</code>); create instructions with <em>New Child</em>.</li>
+      <li>Go back to the first Eclipse to change the icons: import the provided icons into the <code>.edit</code> and
+      <code>.editor</code> projects (<code>icons/full/obj16/</code>), set the <em>Edit &gt; Creation Icons</em> property of the
+      <code>.genmodel</code> to <code>false</code>, then regenerate the <em>Edit</em> code. Relaunch the test Eclipse to see the new icons.</li>
+    </ul>
+    <figure>
+      <img src="images/tp2-006.png" alt="mindstorms metamodel" style="width:820px">
+      <figcaption>The <code>mindstorms</code> metamodel</figcaption>
+    </figure>
+
+    <h3>Step 2 &ndash; Basic workbench</h3>
+    <p><strong>Goal:</strong> create a diagram to display and edit a simple choreography: nodes for the start (the
+    choreography itself) and for the actions <code>Rotate</code> (left or right), <code>GoForward</code>, <code>Grab</code> and
+    <code>Release</code>; an edge from the start to the first action; an edge from each action to the next one; tools to
+    create the actions. All the following actions are done in the test Eclipse, in the <code>.odesign</code> file,
+    except the creation of the Java services.</p>
+    <ul>
+      <li>Create a <em>Viewpoint Specification Project</em> <code>fr.obeo.dsl.tuto.mindstorms.design</code> and import the
+      modeler icons into it.</li>
+      <li>Create a <strong>Viewpoint</strong> (<em>Id</em> = <code>Mindstorms</code>, <em>Model File Extension</em> = <code>mindstorms</code>).</li>
+      <li>Create a <strong>Diagram Description</strong> <code>Choregraphy Diagram</code> (<em>Domain Class</em> =
+      <code>mindstorms.Choregraphy</code>) and reference the <code>mindstorms</code> metamodel in it. The viewpoint can then be
+      enabled on the sample project and an empty diagram created (<em>New representation</em>).</li>
+      <li>Add a <em>Composite Layout</em> with the <em>Left To Right</em> direction.</li>
+      <li>Create the node <code>CD_Start</code>: <em>Domain Class</em> = <code>mindstorms.Choregraphy</code>, <em>Semantic Candidate
+      Expression</em> = <code>var:self</code>, <em>Workspace Image</em> style <code>Start.svg</code>, bold label <code>Start</code>
+      (size 12), no icon, on the border.</li>
+      <li>Create the node <code>CD_Actions</code>: <em>Domain Class</em> = <code>mindstorms.Action</code>, <em>Semantic Candidate
+      Expression</em> = <code>aql:self.instructions-&gt;filter(mindstorms::Action)</code>, <em>Workspace Image</em> style
+      <code>Grab.svg</code> by default, bold label on the border.</li>
+      <li>Add <strong>Style Customizations</strong> to change the image according to the type:
+        <ul>
+          <li><code>Release</code>: predicate <code>aql:self.oclIsKindOf(mindstorms::Release)</code>, property
+          <code>workspacePath</code> = <code>Release.svg</code>;</li>
+          <li><code>GoForward</code>: image <code>GoForward.svg</code>, label <code>aql:self.cm + ' cm'</code>;</li>
+          <li>left rotation: predicate <code>aql:self.oclIsKindOf(mindstorms::Rotate) and self.degrees &gt;= 0</code>, image
+          <code>Rotate_Left.svg</code>, label <code>aql:if (self.random) then '?' else self.degrees + '°' endif</code>;</li>
+          <li>right rotation: same with <code>self.degrees &lt; 0</code> and <code>Rotate_Right.svg</code>.</li>
+        </ul>
+      </li>
+      <li>Create the edge <code>CD_First</code> from the start to the first action: <em>Target Finder Expression</em> =
+      <code>aql:self.instructions-&gt;at(1)</code>, <em>Manhattan</em> routing, black color.</li>
+      <li>Create the Java package <code>fr.obeo.dsl.tuto.mindstorms.design.services</code>, add the metamodel project to the
+      dependencies of <code>MANIFEST.MF</code>, and write the class <code>ChoregraphyServices</code>:</li>
+    </ul>
+<pre><code>public Instruction getNextInstruction(Instruction instruction) {
+    Choregraphy parentChoregraphy = (Choregraphy) instruction.eContainer();
+    List&lt;Instruction&gt; actions = parentChoregraphy.getInstructions();
+    int position = actions.indexOf(instruction);
+    if (position == actions.size() - 1) {
+        return null;
+    } else {
+        return actions.get(position + 1);
+    }
+}</code></pre>
+    <ul>
+      <li>Declare the class on the viewpoint through a <em>Java Extension</em>
+      (<code>fr.obeo.dsl.tuto.mindstorms.design.services.ChoregraphyServices</code>).</li>
+      <li>Create the edge <code>CD_Next</code> from an action to the next one: <em>Target Finder Expression</em> =
+      <code>service:getNextInstruction()</code>.</li>
+      <li>Create an <code>Actions</code> palette section with one <em>Node Creation</em> per action type: <em>Change Context</em> on
+      <code>var:container</code>, then <em>Create Instance</em> (<code>instructions</code>, type <code>mindstorms.Grab</code>). Do the same
+      for <code>Release</code>; for <code>GoForward</code>, add a <em>Set</em> <code>cm</code> = <code>50</code>; for the left and right
+      rotations, a <em>Set</em> <code>degrees</code> = <code>90</code> and <code>-90</code>.</li>
+    </ul>
+
+    <h3>Step 3 &ndash; Advanced workbench</h3>
+    <p><strong>Goal:</strong> declare specific colors, display choreographies inside a container, and add tools (link,
+    double-click, direct editing of labels).</p>
+    <ul>
+      <li>At the root of the modeler, create a <em>User Colors Palette</em> with <code>MindstormColor1</code> (R=186, G=223, B=225)
+      and <code>MindstormColor2</code> (R=0, G=119, B=136).</li>
+      <li>Create the container <code>CD_Choregraphy</code>: <em>Domain Class</em> = <code>mindstorms.Choregraphy</code>, <em>Semantic
+      Candidate Expression</em> = <code>feature:instructions</code>, list presentation, gradient style (background
+      <code>MindstormColor1</code>, border <code>MindstormColor2</code>, bold label).</li>
+      <li>Inside it, create the sub-node <code>CD_Instructions</code> (<em>Domain Class</em> = <code>mindstorms.Instruction</code>,
+      <em>Semantic Candidate Expression</em> = <code>feature:instructions</code>), with an icon and a bold label.</li>
+      <li>Add a customization displaying the name of the choreographies (<code>feature:name</code>) and extend the labels of
+      <code>GoForward</code> and <code>Rotate</code> to the elements of <code>CD_Instructions</code> (<em>Applied On</em> property).</li>
+      <li>Create a tool section for choreographies: a <em>Container Creation</em> (initial name <code>NewChoregraphy</code>); add
+      <code>CD_Choregraphy</code> to the <em>Extra Mappings</em> of the action creation tools.</li>
+      <li>Create a <em>Double-Click</em> on a choreography that opens its detailed diagram (<em>Navigation</em>, <em>Create if not
+      Existent</em> = <code>true</code>).</li>
+      <li>Write the service <code>editElement(Rotate rotate, String value)</code> in <code>ChoregraphyServices</code>, then a
+      <em>Direct Edit Label</em> on <code>CD_Actions</code>, <code>CD_Choregraphy</code> and <code>CD_Instructions</code>: a
+      <em>Switch</em> with three cases (<code>Rotate</code>: <code>service:editElement(arg0)</code>; <code>GoForward</code>:
+      <em>Set</em> <code>cm</code> = <code>var:arg0</code>; <code>Choregraphy</code>: <em>Set</em> <code>name</code> = <code>var:arg0</code>).</li>
+    </ul>
+
+    <h3>Step 4 &ndash; Properties views</h3>
+    <p><strong>Goal:</strong> customize the <em>Properties</em> view of rotations: the <code>degrees</code> field is disabled
+    when <code>random</code> is checked; yellow background when the angle is not between &minus;180 and 180; a warning
+    when the angle is zero without being random.</p>
+    <ul>
+      <li>At the root of the modeler, create a <em>Properties View Description</em>. Modify the first page: <em>Domain
+      Class</em> = <code>mindstorms.Instruction</code>, label <code>General</code>.</li>
+      <li>Create a <code>Properties</code> group (<em>Domain Class</em> = <code>mindstorms.Rotate</code>) and add it to the page:
+        <ul>
+          <li>a <em>Text</em> <code>Degrees</code>: value <code>aql:self.degrees</code>, enabled if <code>aql:not self.random</code>,
+          operation <em>Set</em> of <code>var:newValue</code> into <code>degrees</code>;</li>
+          <li>a <em>Checkbox</em> <code>Random</code>: value <code>aql:self.random</code>, operation <em>Set</em> of
+          <code>var:newValue</code> into <code>random</code>;</li>
+          <li>a conditional style for the <code>Degrees</code> field: <code>aql:self.degrees &gt; 180 or self.degrees &lt; -180</code>;</li>
+          <li>a validation rule of level <em>Warning</em> (&ldquo;<em>This rotation is useless</em>&rdquo;) with the audit
+          <code>aql:self.degrees &lt;&gt; 0 or self.random</code> and a fix that sets <code>random</code> to <code>true</code>.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <details>
+      <summary>Solution notes &ndash; Lab 2</summary>
+      <p>Lab 2 is guided step by step; here are the points to check and the Java services.</p>
+
+      <h3>Step 1</h3>
+      <p>The test model, created with <em>New Child</em>, only accepts <code>Choregraphy</code>, <code>Grab</code>,
+      <code>Release</code>, <code>Rotate</code> and <code>GoForward</code> inside a <code>Choregraphy</code>: <code>Instruction</code>
+      and <code>Action</code> are abstract and do not appear in the menu. After changing the icons, the
+      <code>.genmodel</code> must be regenerated (<em>Edit</em> code) for the new icons to be taken into account.</p>
+
+      <h3>Step 2</h3>
+      <ul>
+        <li>The diagram of a choreography displays a <code>Start</code> node and one node per direct action; a
+        sub-choreography is not an <code>Action</code> and is therefore not displayed by <code>CD_Actions</code>.</li>
+        <li><code>aql:self.instructions-&gt;at(1)</code> denotes the first instruction (indices start at 1); the
+        <code>CD_First</code> edge is drawn only if this instruction is an action.</li>
+        <li><code>getNextInstruction</code> returns <code>null</code> for the last instruction: no edge is created then.</li>
+        <li>The creation tools work on <code>var:container</code>: the action is added to the <code>instructions</code> list of
+        the displayed choreography.</li>
+      </ul>
+
+      <h3>Step 3 &ndash; <code>editElement</code> service</h3>
+<pre><code>public Rotate editElement(Rotate rotate, String value) {
+    String v = value.trim();
+    if ("?".equals(v)) {
+        rotate.setRandom(true);
+    } else {
+        rotate.setDegrees(Integer.parseInt(v.replace("°", "").trim()));
+        rotate.setRandom(false);
+    }
+    return rotate;
+}</code></pre>
+
+      <h3>Step 4</h3>
+      <p>A non-random 0° rotation raises the warning &ldquo;<em>This rotation is useless</em>&rdquo;; the fix makes it
+      random. A 270° rotation is displayed on a yellow background. When <code>random</code> is checked, the
+      <code>Degrees</code> field is disabled (<code>aql:not self.random</code>).</p>
+    </details>
+
+<!-- ================================================================== -->
+    <h2 id="lab3">Lab 3 &ndash; Manipulating models programmatically</h2>
+
+    <h3>Metamodel and model</h3>
+    <p><strong>Conformance relation.</strong> According to the MOF, a metamodel defines the structure that any model
+    conforming to it must have: every model must respect the structure defined by its metamodel.</p>
+    <figure>
+      <img src="images/tp3-001.png" alt="Conformance relation" style="width:520px">
+      <figcaption>Conformance relation between models and metamodel</figcaption>
+    </figure>
+
+    <p><strong>Examples of metamodels.</strong> The UML metamodel states that UML models contain packages, packages
+    contain classes, classes contain attributes and operations, and so on.</p>
+    <figure>
+      <img src="images/tp3-002.png" alt="Simplified class diagram metamodel" style="width:680px">
+      <figcaption>Simplified metamodel of the class diagram</figcaption>
+    </figure>
+    <p>The metamodel of use case diagrams is also a kind of class diagram: each concept is represented by a class and
+    each relation between concepts by an association. It contains three classes: <code>actor</code> (attribute
+    <code>name</code>), <code>system</code> (attribute <code>name</code>) and <code>use case</code> (attribute <code>title</code>).
+    The <code>inherits</code> association has the <code>actor</code> class as source and target; the <code>extends</code>
+    and <code>includes</code> associations have the <code>use case</code> class as source and target. The figure below
+    shows the relations between this metamodel and a use case diagram: the dashed arrows are instantiation
+    relations; a model is said to be an <em>instance</em> of its metamodel.</p>
+    <figure>
+      <img src="images/tp3-004.png" alt="Use case diagram and its metamodel" style="width:560px">
+      <figcaption>A use case diagram and its metamodel</figcaption>
+    </figure>
+
+    <p><strong>The Ecore metamodel.</strong> EMF uses Ecore as the meta-metamodel to define DSLs and to define itself.
+    The root element is the <code>EPackage</code>, which contains <code>EClassifier</code>s (<code>EClass</code>,
+    <code>EDataType</code>, <code>EEnum</code>). An <code>EClass</code> has a name, super-types, attributes
+    (<code>EAttribute</code>), references (<code>EReference</code>) and operations. An <code>EReference</code> models one end
+    of an association: it has a name and a type (the target <code>EClass</code>). A bidirectional association is modeled
+    by two references linked by <code>eOpposite</code>; a composition, by a reference whose <code>containment</code> property
+    is <code>true</code>. The multiplicity of a reference or an attribute is given by <code>lowerBound</code> and
+    <code>upperBound</code>.</p>
+    <figure>
+      <img src="images/tp3-007.png" alt="The Ecore metamodel" style="width:100%">
+      <figcaption>The Ecore metamodel</figcaption>
+    </figure>
+
+    <h3>Creating a metamodel and a model with EMF</h3>
+    <p><strong>Steps for the metamodel</strong></p>
+    <ol>
+      <li>Create an empty EMF project (<em>File &gt; New &gt; Other &gt; Eclipse Modeling Framework &gt; Empty EMF Project</em>).</li>
+      <li>Create a folder for the metamodel and the models.</li>
+      <li>Create in it an Ecore metamodel (<em>New &gt; Other &gt; Eclipse Modeling Framework &gt; Ecore Model</em>) named <code>form.ecore</code>.</li>
+      <li>Open it with the <em>Sample Ecore Model Editor</em> (tree editor).</li>
+      <li>Fill in the package: <em>Name</em> (package name), <em>Ns Prefix</em> (same value as the name) and <em>Ns URI</em>
+      (absolute identifier of the metamodel).</li>
+      <li>Add the elements one by one with <em>New Child</em>, setting for each feature the multiplicities
+      (<code>lowerBound</code>, <code>upperBound</code>), the type (<code>EType</code>), the composition (<code>Containment</code>)
+      and, for a bidirectional relation, the opposite (<code>EOpposite</code>).</li>
+    </ol>
+    <p><strong>Example.</strong> The metamodel of user-interface forms states that a form (<code>Form</code>) is made of
+    fields (<code>Field</code>), themselves made of sub-fields.</p>
+    <figure>
+      <img src="images/tp3-009.png" alt="Form metamodel" style="width:520px">
+      <figcaption>The form metamodel</figcaption>
+    </figure>
+    <p><strong>Note.</strong> Compositions are essential in an Ecore metamodel: an element linked to another one by a
+    composition can be created directly <em>inside</em> an instance of that other element in the model editor. To build
+    a complete model, every metamodel must therefore have a <strong>root element</strong> from which all the other
+    elements can be reached, directly or transitively, through compositions. Here, <code>Form</code> plays this role.</p>
+
+    <p><strong>Steps for the model</strong></p>
+    <ol>
+      <li>Register the metamodel with EMF: right-click on <code>form.ecore</code>, <em>Register EPackages</em>.</li>
+      <li><em>File &gt; New &gt; Other&hellip;</em>, then <em>EMF Model</em> (Epsilon).</li>
+      <li>Name the model, choose the metamodel URI, then the root element.</li>
+      <li>Add the content by right-clicking on the root, <em>New Child</em>.</li>
+    </ol>
+
+    <h3>Manipulating models in Java</h3>
+    <p><strong>Goal.</strong> Write a Java program able to modify <em>any</em> EMF model: add elements, modify their
+    attributes and references, delete elements, then save the result. The program receives the metamodel
+    (<code>.ecore</code>) and the model to modify (a conforming XMI file). It must work, <strong>without changing its
+    code</strong>, on the form metamodel as well as on the graph metamodel seen in class or on any other metamodel.</p>
+
+    <p><strong>Elements of the EMF API</strong></p>
+    <table>
+      <thead><tr><th>Method</th><th>Role</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2"><em>Interface <code>EObject</code> (any model element)</em></td></tr>
+        <tr><td><code>eClass()</code></td><td>the metaclass (<code>EClass</code>) of the element</td></tr>
+        <tr><td><code>eGet(feature)</code></td><td>reads an attribute or a reference; for a multi-valued feature, returns a modifiable list</td></tr>
+        <tr><td><code>eSet(feature, value)</code></td><td>sets a single-valued feature</td></tr>
+        <tr><td><code>eUnset(feature)</code></td><td>resets the feature to its default value (empty for a list)</td></tr>
+        <tr><td><code>eIsSet(feature)</code></td><td>does the feature have a value different from its default value?</td></tr>
+        <tr><td><code>eContainer()</code> / <code>eContents()</code></td><td>the container / the directly contained elements</td></tr>
+        <tr><td><code>eResource()</code></td><td>the resource containing the element, or <code>null</code></td></tr>
+        <tr><td colspan="2"><em>Interfaces <code>EPackage</code>, <code>EClass</code>, <code>EStructuralFeature</code>, <code>EAttribute</code>, <code>EReference</code> (the metamodel)</em></td></tr>
+        <tr><td><code>EPackage.getEClassifier(name)</code></td><td>looks up a metaclass, a data type or an enumeration</td></tr>
+        <tr><td><code>EPackage.getESubpackages()</code> / <code>getNsURI()</code></td><td>sub-packages / <code>nsURI</code></td></tr>
+        <tr><td><code>EClass.getEStructuralFeature(name)</code></td><td>the attribute or reference with this name (inherited ones included), or <code>null</code></td></tr>
+        <tr><td><code>EClass.getEAllAttributes()</code> / <code>getEAllReferences()</code></td><td>all attributes / references, inherited ones included</td></tr>
+        <tr><td><code>EClass.isAbstract()</code></td><td>an abstract metaclass cannot be instantiated</td></tr>
+        <tr><td><code>EClass.isSuperTypeOf(c)</code> / <code>isInstance(obj)</code></td><td>type compatibility tests</td></tr>
+        <tr><td><code>EStructuralFeature.isMany()</code> / <code>getUpperBound()</code></td><td>multi-valued feature? / upper bound (<code>-1</code> for *)</td></tr>
+        <tr><td><code>EStructuralFeature.isChangeable()</code> / <code>isDerived()</code></td><td>modifiable feature? / derived?</td></tr>
+        <tr><td><code>EAttribute.getEAttributeType()</code></td><td>type of the attribute (<code>EString</code>, <code>EInt</code>, enumeration&hellip;)</td></tr>
+        <tr><td><code>EReference.isContainment()</code> / <code>getEReferenceType()</code></td><td>composition? / target metaclass</td></tr>
+        <tr><td colspan="2"><em>Utility class <code>EcoreUtil</code></em></td></tr>
+        <tr><td><code>create(eClass)</code></td><td>creates an instance of the metaclass</td></tr>
+        <tr><td><code>createFromString(type, text)</code> / <code>convertToString(type, value)</code></td><td>conversions text &harr; attribute value</td></tr>
+        <tr><td><code>delete(obj, recursive)</code></td><td>deletes an element from the model (see the javadoc for <code>recursive</code>)</td></tr>
+        <tr><td colspan="2"><em>Interfaces <code>ResourceSet</code> and <code>Resource</code></em></td></tr>
+        <tr><td><code>ResourceSet.getResource(uri, true)</code> / <code>createResource(uri)</code></td><td>loads a file / creates an empty resource</td></tr>
+        <tr><td><code>ResourceSet.getResourceFactoryRegistry()</code></td><td>maps an extension to a factory (<code>EcoreResourceFactoryImpl</code>, <code>XMIResourceFactoryImpl</code>)</td></tr>
+        <tr><td><code>ResourceSet.getPackageRegistry()</code></td><td>maps an <code>nsURI</code> to an <code>EPackage</code></td></tr>
+        <tr><td><code>Resource.getContents()</code> / <code>getAllContents()</code></td><td>root elements / all elements, direct and indirect</td></tr>
+        <tr><td><code>Resource.save(options)</code></td><td>saves the resource (see the <code>XMLResource</code> options)</td></tr>
+      </tbody>
+    </table>
+
+    <p><strong>Project setup</strong></p>
+    <ol>
+      <li>Create a Java project (or a Plug-in project).</li>
+      <li>Add to the <em>build path</em> the libraries <code>org.eclipse.emf.common_*.jar</code>,
+      <code>org.eclipse.emf.ecore_*.jar</code> and <code>org.eclipse.emf.ecore.xmi_*.jar</code> from the Eclipse
+      <code>plugins</code> folder (for a Plug-in project, add <code>org.eclipse.emf.ecore</code> and
+      <code>org.eclipse.emf.ecore.xmi</code> to the dependencies of <code>MANIFEST.MF</code>).</li>
+      <li>Copy the metamodel and the model into the project, for example into <code>model/form/</code>.</li>
+    </ol>
+
+    <h3>Work to do: the <code>ModelManager</code> class</h3>
+    <p>All the operations are grouped in a <code>ModelManager</code> class. None of its methods may contain a name
+    specific to a metamodel (<code>Form</code>, <code>Field</code>, <code>name</code>, <code>Vertex</code>&hellip;): these names
+    are always received as parameters. Any error (unknown metaclass, missing feature, incompatible type&hellip;) throws
+    an <code>IllegalArgumentException</code> with an explicit message.</p>
+<pre><code>public class ModelManager {
+    private final ResourceSet resourceSet = new ResourceSetImpl();
+    private EPackage metamodel;
+    private Resource model;
+
+    /** Maps the "ecore" extension to metamodels and all the other ones to XMI models. */
+    public ModelManager()
+    // ... the methods of questions 1 to 6
+}</code></pre>
+
+    <p><strong>Question 1 &ndash; Loading</strong></p>
+<pre><code>/** Loads the metamodel, registers it (with its sub-packages) in the ResourceSet and returns it. */
+public EPackage loadMetamodel(String path)
+/** Loads an existing model conforming to the already loaded metamodel. */
+public Resource loadModel(String path)
+/** Creates an empty model whose root is an instance of rootClassName; returns this root. */
+public EObject createModel(String path, String rootClassName)
+/** Returns the root element of the model. */
+public EObject getRoot()</code></pre>
+
+    <p><strong>Question 2 &ndash; Searching</strong></p>
+<pre><code>/** The metaclass with this name (sub-packages included), or null. */
+public EClass getEClassByName(String name)
+/** All the instances of className in the model, sub-classes included. */
+public List&lt;EObject&gt; findAll(String className)
+/** The first instance of className whose attribute attrName equals value (compared as text), or null. */
+public EObject findByAttribute(String className, String attrName, String value)</code></pre>
+    <p><code>getEClassByName</code> only returns an <code>EClass</code> (a data type or an enumeration may have the same
+    name); <code>findByAttribute</code> works whatever the type of the attribute.</p>
+
+    <p><strong>Question 3 &ndash; Adding</strong></p>
+<pre><code>/** Creates an instance of the metaclass className (which must be concrete). */
+public EObject createInstance(String className)
+/** Creates an instance of className, stores it in the containment refName of parent and returns it. */
+public EObject addElement(EObject parent, String refName, String className)</code></pre>
+    <p><code>addElement</code> checks, using the metamodel, that <code>refName</code> is a containment of <code>parent</code>,
+    that <code>className</code> is compatible with the type of the reference and that the upper bound is not exceeded;
+    it works for single-valued as well as multi-valued references.</p>
+
+    <p><strong>Question 4 &ndash; Modifying</strong></p>
+<pre><code>/** Sets the attribute attrName of obj (value is converted to the declared type);
+    for a multi-valued attribute, the value is added. */
+public void setAttribute(EObject obj, String attrName, String value)
+/** Links source to the existing element target through the reference refName (not a containment);
+    for a multi-valued reference, target is added. */
+public void setReference(EObject source, String refName, EObject target)
+/** Removes value from the multi-valued feature featureName of obj. */
+public void removeValue(EObject obj, String featureName, Object value)
+/** Resets the feature featureName of obj to its default value. */
+public void unset(EObject obj, String featureName)</code></pre>
+
+    <p><strong>Question 5 &ndash; Deleting</strong></p>
+<pre><code>/** Deletes obj and everything it contains; afterwards, no element references obj anymore. */
+public void deleteElement(EObject obj)
+/** Deletes all the instances of className and returns the number of deleted elements. */
+public int deleteAll(String className)</code></pre>
+
+    <p><strong>Question 6 &ndash; Saving and printing</strong></p>
+<pre><code>/** Saves the model into its file, in UTF-8, with a link to the .ecore (xsi:schemaLocation). */
+public void save() throws IOException
+/** Saves the model into another file. */
+public void saveAs(String path) throws IOException
+/** Prints the model tree: one line per element (metaclass and set attributes),
+    indented according to its depth. */
+public void print()</code></pre>
+    <p>Check that the saved model opens in the Eclipse reflective editor (<em>Open With &gt; Sample Reflective Ecore
+    Model Editor</em>).</p>
+
+    <p><strong>Tests.</strong> With the following initial model:</p>
+<pre><code>&lt;form:Form xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:form="http://poc.hms.form" name="ED EER Model"&gt;
+  &lt;fields name="id Patient"&gt;
+    &lt;fields name="first Name" type="text"/&gt;
+    &lt;fields name="sexe" type="text"/&gt;
+  &lt;/fields&gt;
+  &lt;fields name="id Doctor"/&gt;
+  &lt;fields name="signature" type="text"/&gt;
+&lt;/form:Form&gt;</code></pre>
+    <p>the test program</p>
+<pre><code>public class Main {
+    public static void main(String[] args) throws IOException {
+        ModelManager mm = new ModelManager();
+        mm.loadMetamodel("model/form/form.ecore");
+        mm.loadModel("model/form/form.model");
+        EObject form = mm.getRoot();
+
+        EObject email = mm.addElement(form, "fields", "Field");
+        mm.setAttribute(email, "name", "email");
+        mm.setAttribute(email, "type", "text");
+
+        EObject idPatient = mm.findByAttribute("Field", "name", "id Patient");
+        EObject nationality = mm.addElement(idPatient, "fields", "Field");
+        mm.setAttribute(nationality, "name", "nationality");
+
+        EObject sexe = mm.findByAttribute("Field", "name", "sexe");
+        mm.setAttribute(sexe, "type", "radio");
+
+        mm.deleteElement(mm.findByAttribute("Field", "name", "signature"));
+
+        mm.print();
+        mm.saveAs("model/form/form-modified.model");
+    }
+}</code></pre>
+    <p>must print:</p>
+<pre><code>Form name=ED EER Model
+  Field name=id Patient
+    Field name=first Name type=text
+    Field name=sexe type=radio
+    Field name=nationality
+  Field name=id Doctor
+  Field name=email type=text</code></pre>
+    <p>Without modifying <code>ModelManager</code>, then use it on another metamodel and test all the operations.</p>
+
+    <p><strong>Interactive program.</strong> Write a <code>ModelEditor</code> class that uses <code>ModelManager</code>
+    to provide a console model editor (with <code>Scanner</code>):</p>
+    <ol>
+      <li>the user enters the path of the metamodel and that of the model (or chooses to create a new model);</li>
+      <li>a menu offers: print the model, add an element, modify an attribute, link two elements, delete an element,
+      save, quit;</li>
+      <li>errors are displayed without stopping the program.</li>
+    </ol>
+    <p><strong>Bonus.</strong> When the user selects an element, display its attributes and references with their
+    type and multiplicity. Before saving, check the metamodel constraints (lower bounds&hellip;) with
+    <code>Diagnostician.INSTANCE.validate(root)</code> and display the errors.</p>
+
+    <details>
+      <summary>Solution notes &ndash; Lab 3</summary>
+      <p>Here is an implementation of the <code>ModelManager</code> class.</p>
+
+      <h3>Constructor and question 1</h3>
+<pre><code>public ModelManager() {
+    Map&lt;String, Object&gt; m = resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap();
+    m.put("ecore", new EcoreResourceFactoryImpl());
+    m.put(Resource.Factory.Registry.DEFAULT_EXTENSION, new XMIResourceFactoryImpl());
+}
+
+public EPackage loadMetamodel(String path) {
+    Resource r = resourceSet.getResource(URI.createFileURI(path), true);
+    if (r.getContents().isEmpty() || !(r.getContents().get(0) instanceof EPackage))
+        throw new IllegalArgumentException("No metamodel in " + path);
+    metamodel = (EPackage) r.getContents().get(0);
+    register(metamodel);
+    return metamodel;
+}
+private void register(EPackage p) {
+    resourceSet.getPackageRegistry().put(p.getNsURI(), p);
+    for (EPackage sub : p.getESubpackages()) register(sub);
+}
+
+public Resource loadModel(String path) {
+    model = resourceSet.getResource(URI.createFileURI(path), true);
+    return model;
+}
+
+public EObject createModel(String path, String rootClassName) {
+    model = resourceSet.createResource(URI.createFileURI(path));
+    EObject root = createInstance(rootClassName);
+    model.getContents().add(root);
+    return root;
+}
+
+public EObject getRoot() {
+    if (model == null || model.getContents().isEmpty())
+        throw new IllegalArgumentException("No model loaded");
+    return model.getContents().get(0);
+}</code></pre>
+      <p>Registering the <code>nsURI</code> in the registry of the <code>ResourceSet</code> lets the XMI loader find the
+      package designated by <code>xmlns:form</code>.</p>
+
+      <h3>Question 2</h3>
+<pre><code>public EClass getEClassByName(String name) {
+    return find(metamodel, name);
+}
+private EClass find(EPackage p, String name) {
+    EClassifier c = p.getEClassifier(name);
+    if (c instanceof EClass) return (EClass) c;          // neither EDataType nor EEnum
+    for (EPackage sub : p.getESubpackages()) {
+        EClass r = find(sub, name);
+        if (r != null) return r;
+    }
+    return null;
+}
+
+public List&lt;EObject&gt; findAll(String className) {
+    EClass c = getEClassByName(className);
+    if (c == null) throw new IllegalArgumentException("Unknown metaclass: " + className);
+    List&lt;EObject&gt; res = new ArrayList&lt;&gt;();
+    for (Iterator&lt;EObject&gt; it = model.getAllContents(); it.hasNext(); ) {
+        EObject o = it.next();
+        if (c.isInstance(o)) res.add(o);                 // sub-classes included
+    }
+    return res;
+}
+
+public EObject findByAttribute(String className, String attrName, String value) {
+    for (EObject o : findAll(className)) {
+        EStructuralFeature f = o.eClass().getEStructuralFeature(attrName);
+        if (!(f instanceof EAttribute))
+            throw new IllegalArgumentException("Unknown attribute: " + attrName);
+        Object v = o.eGet(f);
+        if (v != null &amp;&amp; value.equals(
+                EcoreUtil.convertToString(((EAttribute) f).getEAttributeType(), v)))
+            return o;
+    }
+    return null;
+}</code></pre>
+      <p><code>isInstance</code> accepts instances of sub-classes; <code>convertToString</code> produces the text of a value
+      whatever its type (<code>EInt</code>, enumeration&hellip;).</p>
+
+      <h3>Question 3</h3>
+<pre><code>public EObject createInstance(String className) {
+    EClass c = getEClassByName(className);
+    if (c == null) throw new IllegalArgumentException("Unknown metaclass: " + className);
+    if (c.isAbstract() || c.isInterface())
+        throw new IllegalArgumentException(className + " is abstract");
+    return EcoreUtil.create(c);
+}
+
+@SuppressWarnings("unchecked")
+public EObject addElement(EObject parent, String refName, String className) {
+    EStructuralFeature f = parent.eClass().getEStructuralFeature(refName);
+    if (!(f instanceof EReference) || !((EReference) f).isContainment())
+        throw new IllegalArgumentException(refName + " is not a containment of "
+                                           + parent.eClass().getName());
+    EReference ref = (EReference) f;
+    EObject child = createInstance(className);
+    if (!ref.getEReferenceType().isInstance(child))
+        throw new IllegalArgumentException(className + " is incompatible with "
+                                           + ref.getEReferenceType().getName());
+    if (ref.isMany()) {
+        List&lt;EObject&gt; l = (List&lt;EObject&gt;) parent.eGet(ref);
+        if (ref.getUpperBound() != ETypedElement.UNBOUNDED_MULTIPLICITY
+                &amp;&amp; l.size() &gt;= ref.getUpperBound())
+            throw new IllegalArgumentException("Upper bound reached: " + refName);
+        l.add(child);
+    } else {
+        if (parent.eIsSet(ref))
+            throw new IllegalArgumentException(refName + " is already set");
+        parent.eSet(ref, child);
+    }
+    return child;
+}</code></pre>
+
+      <h3>Question 4</h3>
+<pre><code>private EStructuralFeature feature(EObject obj, String name) {
+    EStructuralFeature f = obj.eClass().getEStructuralFeature(name);
+    if (f == null)
+        throw new IllegalArgumentException("Unknown feature: " + obj.eClass().getName() + "." + name);
+    return f;
+}
+
+@SuppressWarnings("unchecked")
+public void setAttribute(EObject obj, String attrName, String value) {
+    EStructuralFeature f = feature(obj, attrName);
+    if (!(f instanceof EAttribute) || !f.isChangeable())
+        throw new IllegalArgumentException(attrName + " is not a modifiable attribute");
+    EAttribute a = (EAttribute) f;
+    Object v;
+    try {
+        v = EcoreUtil.createFromString(a.getEAttributeType(), value);
+    } catch (RuntimeException e) {
+        throw new IllegalArgumentException("Invalid value '" + value + "' for " + attrName, e);
+    }
+    if (a.isMany()) ((List&lt;Object&gt;) obj.eGet(a)).add(v);
+    else obj.eSet(a, v);
+}
+
+@SuppressWarnings("unchecked")
+public void setReference(EObject source, String refName, EObject target) {
+    EStructuralFeature f = feature(source, refName);
+    if (!(f instanceof EReference) || ((EReference) f).isContainment())
+        throw new IllegalArgumentException(refName + " is not a non-containment reference");
+    EReference r = (EReference) f;
+    if (!r.getEReferenceType().isInstance(target))
+        throw new IllegalArgumentException(target.eClass().getName() + " incompatible with " + refName);
+    if (r.isMany()) ((List&lt;EObject&gt;) source.eGet(r)).add(target);
+    else source.eSet(r, target);
+}
+
+public void removeValue(EObject obj, String featureName, Object value) {
+    EStructuralFeature f = feature(obj, featureName);
+    if (!f.isMany())
+        throw new IllegalArgumentException(featureName + " is not multi-valued");
+    ((List&lt;?&gt;) obj.eGet(f)).remove(value);
+}
+
+public void unset(EObject obj, String featureName) {
+    obj.eUnset(feature(obj, featureName));
+}</code></pre>
+
+      <h3>Question 5</h3>
+<pre><code>public void deleteElement(EObject obj) {
+    EcoreUtil.delete(obj, true);     // also removes the references to obj and its content
+}
+
+public int deleteAll(String className) {
+    List&lt;EObject&gt; all = findAll(className);
+    for (EObject o : all)
+        if (o.eResource() != null)   // already deleted with its container?
+            EcoreUtil.delete(o, true);
+    return all.size();
+}</code></pre>
+
+      <h3>Question 6</h3>
+<pre><code>public void save() throws IOException {
+    Map&lt;String, Object&gt; options = new HashMap&lt;&gt;();
+    options.put(XMLResource.OPTION_ENCODING, "UTF-8");
+    options.put(XMLResource.OPTION_SCHEMA_LOCATION, Boolean.TRUE);
+    model.save(options);
+}
+
+public void saveAs(String path) throws IOException {
+    model.setURI(URI.createFileURI(path));
+    save();
+}
+
+public void print() {
+    for (EObject root : model.getContents()) print(root, 0);
+}
+private void print(EObject o, int depth) {
+    StringBuilder sb = new StringBuilder("  ".repeat(depth)).append(o.eClass().getName());
+    for (EAttribute a : o.eClass().getEAllAttributes())
+        if (o.eIsSet(a)) sb.append(' ').append(a.getName()).append('=').append(o.eGet(a));
+    System.out.println(sb);
+    for (EObject child : o.eContents()) print(child, depth + 1);
+}</code></pre>
+
+      <h3>Interactive program (excerpt)</h3>
+<pre><code>while (true) {
+    System.out.println("1 Print  2 Add  3 Modify  4 Link  5 Delete  6 Save  0 Quit");
+    String choice = sc.nextLine().trim();
+    try {
+        switch (choice) {
+            case "1" -&gt; mm.print();
+            case "2" -&gt; {
+                EObject parent = select(sc, mm);
+                System.out.print("Containment: ");  String ref = sc.nextLine();
+                System.out.print("Metaclass: ");    String cls = sc.nextLine();
+                mm.addElement(parent, ref, cls);
+            }
+            // 3, 4 and 5 on the same principle
+            case "6" -&gt; {
+                Diagnostic d = Diagnostician.INSTANCE.validate(mm.getRoot());
+                d.getChildren().forEach(c -&gt; System.out.println(c.getMessage()));
+                mm.save();
+            }
+            case "0" -&gt; { return; }
+            default -&gt; System.out.println("Unknown choice");
+        }
+    } catch (IllegalArgumentException e) {
+        System.out.println("Error: " + e.getMessage());   // the program goes on
+    }
+}</code></pre>
+      <p>The <code>select</code> method can, for instance, designate an element by its metaclass and the value of an
+      attribute (<code>findByAttribute</code>), then display its features (<code>getEAllAttributes()</code>,
+      <code>getEAllReferences()</code>, type and bounds) for the bonus.</p>
+    </details>
+<!-- ================================================================== -->
+    <h2 id="reading">Further reading</h2>
+    <ul class="reading">
+      <li>Marco Brambilla, Jordi Cabot and Manuel Wimmer, <em>Model-Driven Software Engineering in Practice</em>, 2nd ed., Morgan &amp; Claypool, 2017.</li>
+      <li>Dave Steinberg, Frank Budinsky, Marcelo Paternostro and Ed Merks, <em>EMF: Eclipse Modeling Framework</em>, 2nd ed., Addison-Wesley, 2008.</li>
+      <li>Lorenzo Bettini, <em>Implementing Domain-Specific Languages with Xtext and Xtend</em>, 2nd ed., Packt, 2016.</li>
+      <li>Object Management Group, <a href="https://www.omg.org/spec/MOF/">Meta Object Facility (MOF) specification</a>.</li>
+      <li>Eclipse Sirius, <a href="https://eclipse.dev/sirius/">official documentation and tutorials</a>.</li>
+    </ul>
+
+  </div>
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+    
+    <li><a href="https://m-elhamlaoui.github.io/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2026 Mahmoud EL HAMLAOUI. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://m-elhamlaoui.github.io/javascripts/bootstrap.min.js"></script>
+
+<script src="https://m-elhamlaoui.github.io/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
